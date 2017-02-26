@@ -27,4 +27,16 @@
     Private Sub btnPlus_Click(sender As Object, e As EventArgs) Handles btnPlus.Click
 
     End Sub
+
+    Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
+
+    End Sub
+
+    Private Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
+        Print("Hello, World!")
+    End Sub
+
+    Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
+
+    End Sub
 End Class
