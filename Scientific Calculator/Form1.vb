@@ -1,4 +1,6 @@
 ﻿Public Class Form1
+    Public Value1 As Double
+    Public Oper As Char
     Private Sub StandardToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles StandardToolStripMenuItem.Click
         Me.Show()
     End Sub
@@ -8,35 +10,67 @@
         Me.Hide()
     End Sub
 
-    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
-
+    Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
+        ShowValue(Btn7)
     End Sub
 
-    Private Sub btn8_Click(sender As Object, e As EventArgs) Handles btn8.Click
-
+    Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles Btn8.Click
+        ShowValue(Btn8)
     End Sub
 
-    Private Sub btn6_Click(sender As Object, e As EventArgs) Handles btn6.Click
-
+    Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles Btn0.Click
+        ShowValue(Btn0)
     End Sub
 
-    Private Sub btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
-
+    Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
+        ShowValue(Btn1)
     End Sub
 
-    Private Sub btnPlus_Click(sender As Object, e As EventArgs) Handles btnPlus.Click
-
+    Private Sub Btn2_Click(sender As Object, e As EventArgs) Handles Btn2.Click
+        ShowValue(Btn2)
     End Sub
 
-    Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
-
+    Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles Btn3.Click
+        ShowValue(Btn3)
     End Sub
 
-    Private Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
-        Print("Hello, World!")
+    Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles Btn4.Click
+        ShowValue(Btn4)
     End Sub
 
-    Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
+    Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles Btn5.Click
+        ShowValue(Btn5)
+    End Sub
 
+    Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles Btn6.Click
+        ShowValue(Btn6)
+    End Sub
+
+    Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Btn9.Click
+        ShowValue(Btn9)
+    End Sub
+
+    Private Sub BtnDiv_Click(sender As Object, e As EventArgs) Handles BtnDiv.Click
+        Arithematic(BtnDiv)
+    End Sub
+
+    Private Sub BtnMultiply_Click(sender As Object, e As EventArgs) Handles BtnMultiply.Click
+        Arithematic(BtnMultiply)
+    End Sub
+
+    Private Sub BtnMinus_Click(sender As Object, e As EventArgs) Handles BtnMinus.Click
+        Arithematic(BtnMinus)
+    End Sub
+
+    Private Sub BtnPlus_Click(sender As Object, e As EventArgs) Handles BtnPlus.Click
+        Arithematic(BtnPlus)
+    End Sub
+
+    Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
+        Calculate()
+    End Sub
+
+    Private Sub BtnDot_Click(sender As Object, e As EventArgs) Handles BtnDot.Click
+        TextBox1.Text = TextBox1.Text & "."
     End Sub
 End Class

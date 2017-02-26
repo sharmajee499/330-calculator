@@ -14,38 +14,35 @@ E:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scie
 E:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Programmer.resources
 E:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Scientific.resources
 E:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Functions.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe.config
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.exe
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.xml
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.pdb
-<<<<<<< HEAD
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe.config
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\bin\Debug\Scientific Calculator.pdb
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\bin\Debug\Scientific Calculator.xml
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbprojResolveAssemblyReference.cache
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Converter.resources
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Form1.resources
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Functions.resources
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Graphing.resources
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Resources.resources
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Programmer.resources
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Scientific.resources
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbproj.GenerateResource.Cache
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific Calculator.exe
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific Calculator.xml
-C:\Users\GhOst\csc330_calc\330-calculator\Scientific Calculator\obj\Debug\Scientific Calculator.pdb
-=======
->>>>>>> 070017a012afdc2ef061c9135050bee6a140574f
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbprojResolveAssemblyReference.cache
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Converter.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Form1.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Functions.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Graphing.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Resources.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Programmer.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Scientific.resources
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbproj.GenerateResource.Cache
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.pdb
-C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.xml
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe.config
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.pdb
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.xml
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbprojResolveAssemblyReference.cache
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Converter.resources
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Form1.resources
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Functions.resources
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Graphing.resources
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Resources.resources
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Programmer.resources
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Scientific.resources
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbproj.GenerateResource.Cache
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.exe
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.xml
+D:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.pdb
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe.config
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.exe
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.pdb
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\bin\Debug\Scientific Calculator.xml
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbprojResolveAssemblyReference.cache
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Converter.resources
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Form1.resources
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Functions.resources
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Graphing.resources
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Resources.resources
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Programmer.resources
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific_Calculator.Scientific.resources
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.vbproj.GenerateResource.Cache
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.exe
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.xml
+F:\School\Spring 2017\CSC 330 - Software Design & Dev\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.pdb
