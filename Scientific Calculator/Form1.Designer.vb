@@ -55,6 +55,12 @@ Partial Class Form1
         Me.FunctionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConverterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.History = New System.Windows.Forms.TextBox()
+        Me.BtnHistory = New System.Windows.Forms.Button()
+        Me.BtnMC = New System.Windows.Forms.Button()
+        Me.BtnMR = New System.Windows.Forms.Button()
+        Me.BtnMPlus = New System.Windows.Forms.Button()
+        Me.BtnMMinus = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -403,25 +409,25 @@ Partial Class Form1
         'ProgrammerToolStripMenuItem
         '
         Me.ProgrammerToolStripMenuItem.Name = "ProgrammerToolStripMenuItem"
-        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProgrammerToolStripMenuItem.Text = "Programmer"
         '
         'GraphingToolStripMenuItem
         '
         Me.GraphingToolStripMenuItem.Name = "GraphingToolStripMenuItem"
-        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.GraphingToolStripMenuItem.Text = "Graphing"
         '
         'FunctionsToolStripMenuItem
         '
         Me.FunctionsToolStripMenuItem.Name = "FunctionsToolStripMenuItem"
-        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FunctionsToolStripMenuItem.Text = "Functions"
         '
         'ConverterToolStripMenuItem
         '
         Me.ConverterToolStripMenuItem.Name = "ConverterToolStripMenuItem"
-        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ConverterToolStripMenuItem.Text = "Converter"
         '
         'TextBox1
@@ -430,15 +436,95 @@ Partial Class Form1
         Me.TextBox1.Font = New System.Drawing.Font("Arial Narrow", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(12, 59)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(278, 41)
         Me.TextBox1.TabIndex = 27
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'History
+        '
+        Me.History.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.History.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.History.Location = New System.Drawing.Point(304, 27)
+        Me.History.Multiline = True
+        Me.History.Name = "History"
+        Me.History.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.History.Size = New System.Drawing.Size(279, 516)
+        Me.History.TabIndex = 28
+        Me.History.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'BtnHistory
+        '
+        Me.BtnHistory.Location = New System.Drawing.Point(226, 1)
+        Me.BtnHistory.Name = "BtnHistory"
+        Me.BtnHistory.Size = New System.Drawing.Size(75, 23)
+        Me.BtnHistory.TabIndex = 29
+        Me.BtnHistory.Text = "History"
+        Me.BtnHistory.UseVisualStyleBackColor = True
+        '
+        'BtnMC
+        '
+        Me.BtnMC.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BtnMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMC.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMC.Location = New System.Drawing.Point(1, 168)
+        Me.BtnMC.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMC.Name = "BtnMC"
+        Me.BtnMC.Size = New System.Drawing.Size(75, 34)
+        Me.BtnMC.TabIndex = 30
+        Me.BtnMC.Text = "MC"
+        Me.BtnMC.UseVisualStyleBackColor = True
+        '
+        'BtnMR
+        '
+        Me.BtnMR.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BtnMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMR.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMR.Location = New System.Drawing.Point(76, 168)
+        Me.BtnMR.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMR.Name = "BtnMR"
+        Me.BtnMR.Size = New System.Drawing.Size(75, 34)
+        Me.BtnMR.TabIndex = 31
+        Me.BtnMR.Text = "MR"
+        Me.BtnMR.UseVisualStyleBackColor = True
+        '
+        'BtnMPlus
+        '
+        Me.BtnMPlus.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BtnMPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMPlus.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMPlus.Location = New System.Drawing.Point(151, 168)
+        Me.BtnMPlus.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMPlus.Name = "BtnMPlus"
+        Me.BtnMPlus.Size = New System.Drawing.Size(75, 34)
+        Me.BtnMPlus.TabIndex = 32
+        Me.BtnMPlus.Text = "M+"
+        Me.BtnMPlus.UseVisualStyleBackColor = True
+        '
+        'BtnMMinus
+        '
+        Me.BtnMMinus.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BtnMMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMMinus.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMMinus.Location = New System.Drawing.Point(226, 168)
+        Me.BtnMMinus.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMMinus.Name = "BtnMMinus"
+        Me.BtnMMinus.Size = New System.Drawing.Size(75, 34)
+        Me.BtnMMinus.TabIndex = 33
+        Me.BtnMMinus.Text = "M-"
+        Me.BtnMMinus.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(302, 545)
+        Me.Controls.Add(Me.BtnMMinus)
+        Me.Controls.Add(Me.BtnMPlus)
+        Me.Controls.Add(Me.BtnMR)
+        Me.Controls.Add(Me.BtnMC)
+        Me.Controls.Add(Me.BtnHistory)
+        Me.Controls.Add(Me.History)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.BtnFraction)
         Me.Controls.Add(Me.BtnXSqr)
@@ -511,4 +597,10 @@ Partial Class Form1
     Friend WithEvents FunctionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConverterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents History As TextBox
+    Friend WithEvents BtnHistory As Button
+    Friend WithEvents BtnMC As Button
+    Friend WithEvents BtnMR As Button
+    Friend WithEvents BtnMPlus As Button
+    Friend WithEvents BtnMMinus As Button
 End Class
