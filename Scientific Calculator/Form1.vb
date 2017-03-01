@@ -150,6 +150,7 @@
 
     Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
         TextBox1.Text = ""
+        TextBox2.Text = ""
     End Sub
 
     Private Sub BtnMC_Click(sender As Object, e As EventArgs) Handles BtnMC.Click
@@ -166,6 +167,7 @@
 
     Private Sub btnCE_Click(sender As Object, e As EventArgs) Handles btnCE.Click
         TextBox1.Text = 0
+        TextBox2.Text = 0
     End Sub
 
     Private Sub ProgrammerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProgrammerToolStripMenuItem.Click
@@ -186,6 +188,10 @@
     Private Sub ConverterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConverterToolStripMenuItem.Click
         Converter.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

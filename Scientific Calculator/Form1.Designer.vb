@@ -61,6 +61,7 @@ Partial Class Form1
         Me.BtnMR = New System.Windows.Forms.Button()
         Me.BtnMPlus = New System.Windows.Forms.Button()
         Me.BtnMMinus = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -514,11 +515,23 @@ Partial Class Form1
         Me.BtnMMinus.Text = "M-"
         Me.BtnMMinus.UseVisualStyleBackColor = True
         '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.TextBox2.Location = New System.Drawing.Point(64, 14)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(40, 20)
+        Me.TextBox2.TabIndex = 34
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(302, 550)
+        Me.ClientSize = New System.Drawing.Size(302, 555)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.BtnMMinus)
         Me.Controls.Add(Me.BtnMPlus)
         Me.Controls.Add(Me.BtnMR)
@@ -603,4 +616,5 @@ Partial Class Form1
     Friend WithEvents BtnMR As Button
     Friend WithEvents BtnMPlus As Button
     Friend WithEvents BtnMMinus As Button
+    Friend WithEvents TextBox2 As TextBox
 End Class
