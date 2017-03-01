@@ -186,6 +186,7 @@
     End Sub
 
     Private Sub BtnMod_Click(sender As Object, e As EventArgs) Handles BtnMod.Click
+        Arithematic2(BtnMod)
     End Sub
 
     Private Sub BtnXSqr_Click(sender As Object, e As EventArgs) Handles BtnXSqr.Click
@@ -222,6 +223,10 @@
 
     Private Sub BtnMMinus_Click(sender As Object, e As EventArgs) Handles BtnMMinus.Click
         Mem = Mem - Val(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnPi_Click(sender As Object, e As EventArgs) Handles BtnPi.Click
+        TextBox1.Text = System.Math.PI
     End Sub
 
     Private Sub FunctionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FunctionsToolStripMenuItem.Click
