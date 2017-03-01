@@ -61,6 +61,7 @@ Partial Class Form1
         Me.BtnMR = New System.Windows.Forms.Button()
         Me.BtnMPlus = New System.Windows.Forms.Button()
         Me.BtnMMinus = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -409,25 +410,25 @@ Partial Class Form1
         'ProgrammerToolStripMenuItem
         '
         Me.ProgrammerToolStripMenuItem.Name = "ProgrammerToolStripMenuItem"
-        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ProgrammerToolStripMenuItem.Text = "Programmer"
         '
         'GraphingToolStripMenuItem
         '
         Me.GraphingToolStripMenuItem.Name = "GraphingToolStripMenuItem"
-        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.GraphingToolStripMenuItem.Text = "Graphing"
         '
         'FunctionsToolStripMenuItem
         '
         Me.FunctionsToolStripMenuItem.Name = "FunctionsToolStripMenuItem"
-        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.FunctionsToolStripMenuItem.Text = "Functions"
         '
         'ConverterToolStripMenuItem
         '
         Me.ConverterToolStripMenuItem.Name = "ConverterToolStripMenuItem"
-        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ConverterToolStripMenuItem.Text = "Converter"
         '
         'TextBox1
@@ -514,11 +515,21 @@ Partial Class Form1
         Me.BtnMMinus.Text = "M-"
         Me.BtnMMinus.UseVisualStyleBackColor = True
         '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.TextBox2.Location = New System.Drawing.Point(172, 33)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 34
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(302, 545)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.BtnMMinus)
         Me.Controls.Add(Me.BtnMPlus)
         Me.Controls.Add(Me.BtnMR)
@@ -603,4 +614,5 @@ Partial Class Form1
     Friend WithEvents BtnMR As Button
     Friend WithEvents BtnMPlus As Button
     Friend WithEvents BtnMMinus As Button
+    Friend WithEvents TextBox2 As TextBox
 End Class
