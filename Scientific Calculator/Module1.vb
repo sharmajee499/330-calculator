@@ -14,7 +14,6 @@
             Form1.TextBox2.Text = Form1.TextBox1.Text
         End If
         Form1.TextBox1.Text = (Form1.TextBox1.Text & Butt.Text)
-        Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
     End Sub
 
     Sub ShowValue2(ByVal Butt As Button)
@@ -23,7 +22,6 @@
             lastWasArith = False
         End If
         Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
-        Form1.TextBox2.Text = (Form1.TextBox2.Text & Butt.Text)
     End Sub
 
     Sub Arithematic(ByVal butt As Button)
