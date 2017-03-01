@@ -32,12 +32,12 @@ Partial Class Scientific
         Me.Btn2 = New System.Windows.Forms.Button()
         Me.Btn3 = New System.Windows.Forms.Button()
         Me.BtnPlus = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.BtnFactorial = New System.Windows.Forms.Button()
         Me.Btn4 = New System.Windows.Forms.Button()
         Me.Btn5 = New System.Windows.Forms.Button()
         Me.Btn6 = New System.Windows.Forms.Button()
         Me.BtnMinus = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
+        Me.BtnPi = New System.Windows.Forms.Button()
         Me.Btn7 = New System.Windows.Forms.Button()
         Me.Btn8 = New System.Windows.Forms.Button()
         Me.Btn9 = New System.Windows.Forms.Button()
@@ -47,20 +47,20 @@ Partial Class Scientific
         Me.BtnC = New System.Windows.Forms.Button()
         Me.BtnDel = New System.Windows.Forms.Button()
         Me.BtnDiv = New System.Windows.Forms.Button()
-        Me.Button26 = New System.Windows.Forms.Button()
-        Me.Button27 = New System.Windows.Forms.Button()
-        Me.Button28 = New System.Windows.Forms.Button()
-        Me.Button29 = New System.Windows.Forms.Button()
-        Me.Button30 = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
-        Me.Button32 = New System.Windows.Forms.Button()
-        Me.Button33 = New System.Windows.Forms.Button()
-        Me.Button34 = New System.Windows.Forms.Button()
-        Me.Button35 = New System.Windows.Forms.Button()
-        Me.Button36 = New System.Windows.Forms.Button()
-        Me.Button37 = New System.Windows.Forms.Button()
-        Me.Button38 = New System.Windows.Forms.Button()
-        Me.Button39 = New System.Windows.Forms.Button()
+        Me.BtnSqrRoot = New System.Windows.Forms.Button()
+        Me.Btn10X = New System.Windows.Forms.Button()
+        Me.BtnLog = New System.Windows.Forms.Button()
+        Me.BtnExp = New System.Windows.Forms.Button()
+        Me.BtnMod = New System.Windows.Forms.Button()
+        Me.BtnXSqr = New System.Windows.Forms.Button()
+        Me.BtnXY = New System.Windows.Forms.Button()
+        Me.BtnSin = New System.Windows.Forms.Button()
+        Me.BtnCos = New System.Windows.Forms.Button()
+        Me.BtnTan = New System.Windows.Forms.Button()
+        Me.BtnMC = New System.Windows.Forms.Button()
+        Me.BtnMR = New System.Windows.Forms.Button()
+        Me.BtnMPlus = New System.Windows.Forms.Button()
+        Me.BtnMMinus = New System.Windows.Forms.Button()
         Me.Button40 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -70,6 +70,7 @@ Partial Class Scientific
         Me.GraphingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FunctionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConverterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -173,15 +174,15 @@ Partial Class Scientific
         Me.BtnPlus.Text = "+"
         Me.BtnPlus.UseVisualStyleBackColor = True
         '
-        'Button11
+        'BtnFactorial
         '
-        Me.Button11.Location = New System.Drawing.Point(1, 417)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(60, 43)
-        Me.Button11.TabIndex = 10
-        Me.Button11.Text = "Button11"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.BtnFactorial.Location = New System.Drawing.Point(1, 417)
+        Me.BtnFactorial.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnFactorial.Name = "BtnFactorial"
+        Me.BtnFactorial.Size = New System.Drawing.Size(60, 43)
+        Me.BtnFactorial.TabIndex = 10
+        Me.BtnFactorial.Text = "n!"
+        Me.BtnFactorial.UseVisualStyleBackColor = True
         '
         'Btn4
         '
@@ -223,15 +224,15 @@ Partial Class Scientific
         Me.BtnMinus.Text = "-"
         Me.BtnMinus.UseVisualStyleBackColor = True
         '
-        'Button16
+        'BtnPi
         '
-        Me.Button16.Location = New System.Drawing.Point(1, 374)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(60, 43)
-        Me.Button16.TabIndex = 15
-        Me.Button16.Text = "Button16"
-        Me.Button16.UseVisualStyleBackColor = True
+        Me.BtnPi.Location = New System.Drawing.Point(1, 374)
+        Me.BtnPi.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnPi.Name = "BtnPi"
+        Me.BtnPi.Size = New System.Drawing.Size(60, 43)
+        Me.BtnPi.TabIndex = 15
+        Me.BtnPi.Text = "π"
+        Me.BtnPi.UseVisualStyleBackColor = True
         '
         'Btn7
         '
@@ -323,145 +324,147 @@ Partial Class Scientific
         Me.BtnDiv.Text = "÷"
         Me.BtnDiv.UseVisualStyleBackColor = True
         '
-        'Button26
+        'BtnSqrRoot
         '
-        Me.Button26.Location = New System.Drawing.Point(1, 288)
-        Me.Button26.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(60, 43)
-        Me.Button26.TabIndex = 25
-        Me.Button26.Text = "Button26"
-        Me.Button26.UseVisualStyleBackColor = True
+        Me.BtnSqrRoot.Location = New System.Drawing.Point(1, 288)
+        Me.BtnSqrRoot.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnSqrRoot.Name = "BtnSqrRoot"
+        Me.BtnSqrRoot.Size = New System.Drawing.Size(60, 43)
+        Me.BtnSqrRoot.TabIndex = 25
+        Me.BtnSqrRoot.Text = "√"
+        Me.BtnSqrRoot.UseVisualStyleBackColor = True
         '
-        'Button27
+        'Btn10X
         '
-        Me.Button27.Location = New System.Drawing.Point(61, 288)
-        Me.Button27.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(60, 43)
-        Me.Button27.TabIndex = 26
-        Me.Button27.Text = "Button27"
-        Me.Button27.UseVisualStyleBackColor = True
+        Me.Btn10X.Location = New System.Drawing.Point(61, 288)
+        Me.Btn10X.Margin = New System.Windows.Forms.Padding(0)
+        Me.Btn10X.Name = "Btn10X"
+        Me.Btn10X.Size = New System.Drawing.Size(60, 43)
+        Me.Btn10X.TabIndex = 26
+        Me.Btn10X.Text = "10˟"
+        Me.Btn10X.UseVisualStyleBackColor = True
         '
-        'Button28
+        'BtnLog
         '
-        Me.Button28.Location = New System.Drawing.Point(121, 288)
-        Me.Button28.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(60, 43)
-        Me.Button28.TabIndex = 27
-        Me.Button28.Text = "Button28"
-        Me.Button28.UseVisualStyleBackColor = True
+        Me.BtnLog.Location = New System.Drawing.Point(121, 288)
+        Me.BtnLog.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnLog.Name = "BtnLog"
+        Me.BtnLog.Size = New System.Drawing.Size(60, 43)
+        Me.BtnLog.TabIndex = 27
+        Me.BtnLog.Text = "log"
+        Me.BtnLog.UseVisualStyleBackColor = True
         '
-        'Button29
+        'BtnExp
         '
-        Me.Button29.Location = New System.Drawing.Point(181, 288)
-        Me.Button29.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button29.Name = "Button29"
-        Me.Button29.Size = New System.Drawing.Size(60, 43)
-        Me.Button29.TabIndex = 28
-        Me.Button29.Text = "Button29"
-        Me.Button29.UseVisualStyleBackColor = True
+        Me.BtnExp.Location = New System.Drawing.Point(181, 288)
+        Me.BtnExp.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnExp.Name = "BtnExp"
+        Me.BtnExp.Size = New System.Drawing.Size(60, 43)
+        Me.BtnExp.TabIndex = 28
+        Me.BtnExp.Text = "Exp"
+        Me.BtnExp.UseVisualStyleBackColor = True
         '
-        'Button30
+        'BtnMod
         '
-        Me.Button30.Location = New System.Drawing.Point(241, 288)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(60, 43)
-        Me.Button30.TabIndex = 29
-        Me.Button30.Text = "Button30"
-        Me.Button30.UseVisualStyleBackColor = True
+        Me.BtnMod.Location = New System.Drawing.Point(241, 288)
+        Me.BtnMod.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMod.Name = "BtnMod"
+        Me.BtnMod.Size = New System.Drawing.Size(60, 43)
+        Me.BtnMod.TabIndex = 29
+        Me.BtnMod.Text = "Mod"
+        Me.BtnMod.UseVisualStyleBackColor = True
         '
-        'Button31
+        'BtnXSqr
         '
-        Me.Button31.Location = New System.Drawing.Point(1, 245)
-        Me.Button31.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(60, 43)
-        Me.Button31.TabIndex = 30
-        Me.Button31.Text = "Button31"
-        Me.Button31.UseVisualStyleBackColor = True
+        Me.BtnXSqr.Location = New System.Drawing.Point(1, 245)
+        Me.BtnXSqr.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnXSqr.Name = "BtnXSqr"
+        Me.BtnXSqr.Size = New System.Drawing.Size(60, 43)
+        Me.BtnXSqr.TabIndex = 30
+        Me.BtnXSqr.Text = "x²"
+        Me.BtnXSqr.UseVisualStyleBackColor = True
         '
-        'Button32
+        'BtnXY
         '
-        Me.Button32.Location = New System.Drawing.Point(61, 245)
-        Me.Button32.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(60, 43)
-        Me.Button32.TabIndex = 31
-        Me.Button32.Text = "Button32"
-        Me.Button32.UseVisualStyleBackColor = True
+        Me.BtnXY.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnXY.Location = New System.Drawing.Point(61, 245)
+        Me.BtnXY.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnXY.Name = "BtnXY"
+        Me.BtnXY.Size = New System.Drawing.Size(60, 43)
+        Me.BtnXY.TabIndex = 31
+        Me.BtnXY.Text = " x ꙷ"
+        Me.BtnXY.UseVisualStyleBackColor = True
         '
-        'Button33
+        'BtnSin
         '
-        Me.Button33.Location = New System.Drawing.Point(121, 245)
-        Me.Button33.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button33.Name = "Button33"
-        Me.Button33.Size = New System.Drawing.Size(60, 43)
-        Me.Button33.TabIndex = 32
-        Me.Button33.Text = "Button33"
-        Me.Button33.UseVisualStyleBackColor = True
+        Me.BtnSin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.BtnSin.Location = New System.Drawing.Point(121, 245)
+        Me.BtnSin.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnSin.Name = "BtnSin"
+        Me.BtnSin.Size = New System.Drawing.Size(60, 43)
+        Me.BtnSin.TabIndex = 32
+        Me.BtnSin.Text = "sin"
+        Me.BtnSin.UseVisualStyleBackColor = True
         '
-        'Button34
+        'BtnCos
         '
-        Me.Button34.Location = New System.Drawing.Point(181, 245)
-        Me.Button34.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button34.Name = "Button34"
-        Me.Button34.Size = New System.Drawing.Size(60, 43)
-        Me.Button34.TabIndex = 33
-        Me.Button34.Text = "Button34"
-        Me.Button34.UseVisualStyleBackColor = True
+        Me.BtnCos.Location = New System.Drawing.Point(181, 245)
+        Me.BtnCos.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnCos.Name = "BtnCos"
+        Me.BtnCos.Size = New System.Drawing.Size(60, 43)
+        Me.BtnCos.TabIndex = 33
+        Me.BtnCos.Text = "cos"
+        Me.BtnCos.UseVisualStyleBackColor = True
         '
-        'Button35
+        'BtnTan
         '
-        Me.Button35.Location = New System.Drawing.Point(241, 245)
-        Me.Button35.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button35.Name = "Button35"
-        Me.Button35.Size = New System.Drawing.Size(60, 43)
-        Me.Button35.TabIndex = 34
-        Me.Button35.Text = "Button35"
-        Me.Button35.UseVisualStyleBackColor = True
+        Me.BtnTan.Location = New System.Drawing.Point(241, 245)
+        Me.BtnTan.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnTan.Name = "BtnTan"
+        Me.BtnTan.Size = New System.Drawing.Size(60, 43)
+        Me.BtnTan.TabIndex = 34
+        Me.BtnTan.Text = "tan"
+        Me.BtnTan.UseVisualStyleBackColor = True
         '
-        'Button36
+        'BtnMC
         '
-        Me.Button36.Location = New System.Drawing.Point(1, 202)
-        Me.Button36.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button36.Name = "Button36"
-        Me.Button36.Size = New System.Drawing.Size(60, 43)
-        Me.Button36.TabIndex = 35
-        Me.Button36.Text = "Button36"
-        Me.Button36.UseVisualStyleBackColor = True
+        Me.BtnMC.Location = New System.Drawing.Point(1, 202)
+        Me.BtnMC.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMC.Name = "BtnMC"
+        Me.BtnMC.Size = New System.Drawing.Size(60, 43)
+        Me.BtnMC.TabIndex = 35
+        Me.BtnMC.Text = "MC"
+        Me.BtnMC.UseVisualStyleBackColor = True
         '
-        'Button37
+        'BtnMR
         '
-        Me.Button37.Location = New System.Drawing.Point(61, 202)
-        Me.Button37.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button37.Name = "Button37"
-        Me.Button37.Size = New System.Drawing.Size(60, 43)
-        Me.Button37.TabIndex = 36
-        Me.Button37.Text = "Button37"
-        Me.Button37.UseVisualStyleBackColor = True
+        Me.BtnMR.Location = New System.Drawing.Point(61, 202)
+        Me.BtnMR.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMR.Name = "BtnMR"
+        Me.BtnMR.Size = New System.Drawing.Size(60, 43)
+        Me.BtnMR.TabIndex = 36
+        Me.BtnMR.Text = "MR"
+        Me.BtnMR.UseVisualStyleBackColor = True
         '
-        'Button38
+        'BtnMPlus
         '
-        Me.Button38.Location = New System.Drawing.Point(121, 202)
-        Me.Button38.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button38.Name = "Button38"
-        Me.Button38.Size = New System.Drawing.Size(60, 43)
-        Me.Button38.TabIndex = 37
-        Me.Button38.Text = "Button38"
-        Me.Button38.UseVisualStyleBackColor = True
+        Me.BtnMPlus.Location = New System.Drawing.Point(121, 202)
+        Me.BtnMPlus.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMPlus.Name = "BtnMPlus"
+        Me.BtnMPlus.Size = New System.Drawing.Size(60, 43)
+        Me.BtnMPlus.TabIndex = 37
+        Me.BtnMPlus.Text = "M+"
+        Me.BtnMPlus.UseVisualStyleBackColor = True
         '
-        'Button39
+        'BtnMMinus
         '
-        Me.Button39.Location = New System.Drawing.Point(181, 202)
-        Me.Button39.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button39.Name = "Button39"
-        Me.Button39.Size = New System.Drawing.Size(60, 43)
-        Me.Button39.TabIndex = 38
-        Me.Button39.Text = "Button39"
-        Me.Button39.UseVisualStyleBackColor = True
+        Me.BtnMMinus.Location = New System.Drawing.Point(181, 202)
+        Me.BtnMMinus.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMMinus.Name = "BtnMMinus"
+        Me.BtnMMinus.Size = New System.Drawing.Size(60, 43)
+        Me.BtnMMinus.TabIndex = 38
+        Me.BtnMMinus.Text = "M-"
+        Me.BtnMMinus.UseVisualStyleBackColor = True
         '
         'Button40
         '
@@ -506,48 +509,59 @@ Partial Class Scientific
         'ProgrammerToolStripMenuItem
         '
         Me.ProgrammerToolStripMenuItem.Name = "ProgrammerToolStripMenuItem"
-        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ProgrammerToolStripMenuItem.Text = "Programmer"
         '
         'GraphingToolStripMenuItem
         '
         Me.GraphingToolStripMenuItem.Name = "GraphingToolStripMenuItem"
-        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.GraphingToolStripMenuItem.Text = "Graphing"
         '
         'FunctionsToolStripMenuItem
         '
         Me.FunctionsToolStripMenuItem.Name = "FunctionsToolStripMenuItem"
-        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.FunctionsToolStripMenuItem.Text = "Functions"
         '
         'ConverterToolStripMenuItem
         '
         Me.ConverterToolStripMenuItem.Name = "ConverterToolStripMenuItem"
-        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ConverterToolStripMenuItem.Text = "Converter"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(12, 119)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(278, 40)
+        Me.TextBox1.TabIndex = 41
+        Me.TextBox1.Text = "0"
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Scientific
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(302, 547)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Button40)
-        Me.Controls.Add(Me.Button39)
-        Me.Controls.Add(Me.Button38)
-        Me.Controls.Add(Me.Button37)
-        Me.Controls.Add(Me.Button36)
-        Me.Controls.Add(Me.Button35)
-        Me.Controls.Add(Me.Button34)
-        Me.Controls.Add(Me.Button33)
-        Me.Controls.Add(Me.Button32)
-        Me.Controls.Add(Me.Button31)
-        Me.Controls.Add(Me.Button30)
-        Me.Controls.Add(Me.Button29)
-        Me.Controls.Add(Me.Button28)
-        Me.Controls.Add(Me.Button27)
-        Me.Controls.Add(Me.Button26)
+        Me.Controls.Add(Me.BtnMMinus)
+        Me.Controls.Add(Me.BtnMPlus)
+        Me.Controls.Add(Me.BtnMR)
+        Me.Controls.Add(Me.BtnMC)
+        Me.Controls.Add(Me.BtnTan)
+        Me.Controls.Add(Me.BtnCos)
+        Me.Controls.Add(Me.BtnSin)
+        Me.Controls.Add(Me.BtnXY)
+        Me.Controls.Add(Me.BtnXSqr)
+        Me.Controls.Add(Me.BtnMod)
+        Me.Controls.Add(Me.BtnExp)
+        Me.Controls.Add(Me.BtnLog)
+        Me.Controls.Add(Me.Btn10X)
+        Me.Controls.Add(Me.BtnSqrRoot)
         Me.Controls.Add(Me.BtnDiv)
         Me.Controls.Add(Me.BtnDel)
         Me.Controls.Add(Me.BtnC)
@@ -557,12 +571,12 @@ Partial Class Scientific
         Me.Controls.Add(Me.Btn9)
         Me.Controls.Add(Me.Btn8)
         Me.Controls.Add(Me.Btn7)
-        Me.Controls.Add(Me.Button16)
+        Me.Controls.Add(Me.BtnPi)
         Me.Controls.Add(Me.BtnMinus)
         Me.Controls.Add(Me.Btn6)
         Me.Controls.Add(Me.Btn5)
         Me.Controls.Add(Me.Btn4)
-        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.BtnFactorial)
         Me.Controls.Add(Me.BtnPlus)
         Me.Controls.Add(Me.Btn3)
         Me.Controls.Add(Me.Btn2)
@@ -573,7 +587,7 @@ Partial Class Scientific
         Me.Controls.Add(Me.Btn0)
         Me.Controls.Add(Me.BtnRBracket)
         Me.Controls.Add(Me.BtnLBracket)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Scientific"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calculator"
@@ -594,12 +608,12 @@ Partial Class Scientific
     Friend WithEvents Btn2 As Button
     Friend WithEvents Btn3 As Button
     Friend WithEvents BtnPlus As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents BtnFactorial As Button
     Friend WithEvents Btn4 As Button
     Friend WithEvents Btn5 As Button
     Friend WithEvents Btn6 As Button
     Friend WithEvents BtnMinus As Button
-    Friend WithEvents Button16 As Button
+    Friend WithEvents BtnPi As Button
     Friend WithEvents Btn7 As Button
     Friend WithEvents Btn8 As Button
     Friend WithEvents Btn9 As Button
@@ -609,20 +623,20 @@ Partial Class Scientific
     Friend WithEvents BtnC As Button
     Friend WithEvents BtnDel As Button
     Friend WithEvents BtnDiv As Button
-    Friend WithEvents Button26 As Button
-    Friend WithEvents Button27 As Button
-    Friend WithEvents Button28 As Button
-    Friend WithEvents Button29 As Button
-    Friend WithEvents Button30 As Button
-    Friend WithEvents Button31 As Button
-    Friend WithEvents Button32 As Button
-    Friend WithEvents Button33 As Button
-    Friend WithEvents Button34 As Button
-    Friend WithEvents Button35 As Button
-    Friend WithEvents Button36 As Button
-    Friend WithEvents Button37 As Button
-    Friend WithEvents Button38 As Button
-    Friend WithEvents Button39 As Button
+    Friend WithEvents BtnSqrRoot As Button
+    Friend WithEvents Btn10X As Button
+    Friend WithEvents BtnLog As Button
+    Friend WithEvents BtnExp As Button
+    Friend WithEvents BtnMod As Button
+    Friend WithEvents BtnXSqr As Button
+    Friend WithEvents BtnXY As Button
+    Friend WithEvents BtnSin As Button
+    Friend WithEvents BtnCos As Button
+    Friend WithEvents BtnTan As Button
+    Friend WithEvents BtnMC As Button
+    Friend WithEvents BtnMR As Button
+    Friend WithEvents BtnMPlus As Button
+    Friend WithEvents BtnMMinus As Button
     Friend WithEvents Button40 As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
@@ -632,4 +646,5 @@ Partial Class Scientific
     Friend WithEvents GraphingToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FunctionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConverterToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TextBox1 As TextBox
 End Class
