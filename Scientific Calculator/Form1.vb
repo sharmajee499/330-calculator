@@ -108,6 +108,7 @@
 
     Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
         TextBox1.Text = ""
+        TextBox2.Text = ""
     End Sub
 
     Private Sub BtnMC_Click(sender As Object, e As EventArgs) Handles BtnMC.Click
@@ -124,6 +125,7 @@
 
     Private Sub btnCE_Click(sender As Object, e As EventArgs) Handles btnCE.Click
         TextBox1.Text = 0
+        TextBox2.Text = 0
     End Sub
 
     Private Sub ProgrammerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProgrammerToolStripMenuItem.Click

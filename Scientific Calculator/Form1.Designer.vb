@@ -519,16 +519,17 @@ Partial Class Form1
         '
         Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.TextBox2.Location = New System.Drawing.Point(172, 33)
+        Me.TextBox2.Location = New System.Drawing.Point(64, 14)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(40, 20)
         Me.TextBox2.TabIndex = 34
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(302, 545)
+        Me.ClientSize = New System.Drawing.Size(302, 555)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.BtnMMinus)
         Me.Controls.Add(Me.BtnMPlus)
@@ -563,7 +564,7 @@ Partial Class Form1
         Me.Controls.Add(Me.BtnPlusMinus)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
