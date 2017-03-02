@@ -158,37 +158,17 @@
         TextBox1.Text = Val(TextBox1.Text) * -1
     End Sub
 
-    Dim n As Integer
-    Dim factorial As Integer = 0
-    Dim firstNum As Decimal
-    Dim invalid As Boolean = False
-    Private Sub BtnFactorial_Click(sender As Object, e As EventArgs) Handles BtnFactorial.Click
-        If factorial = 0 Then
-            firstNum = TextBox1.Text
-            n = TextBox1.Text - 1
-            factorial = 1
-        End If
-
-        If factorial = 1 Then
-            If firstNum > 0 Then
-                While n > 0
-                    firstNum = firstNum * n
-                    n = n - 1
-                End While
-            ElseIf firstNum = 1 Then
-                firstNum = 1
-            Else
-                invalid = True
-            End If
-            factorial = 0
-        End If
-
-        If invalid = True Then
-            TextBox1.Text = "Invalid"
-            invalid = False
+    Private Function Fact(ByVal n As Integer)
+        If (n = 0) Then
+            Fact = 1
         Else
-            TextBox1.Text = firstNum
+            Fact = n * Fact(n - 1)
         End If
+    End Function
+    Private Sub BtnFactorial_Click(sender As Object, e As EventArgs) Handles BtnFactorial.Click
+        Dim n As Integer
+        n = TextBox1.Text
+        TextBox1.Text = Fact(n).ToString()
     End Sub
 
     Private Sub BtnSqrRoot_Click(sender As Object, e As EventArgs) Handles BtnSqrRoot.Click
@@ -208,6 +188,7 @@
     End Sub
 
     Private Sub BtnMod_Click(sender As Object, e As EventArgs) Handles BtnMod.Click
+        Arithematic2(BtnMod)
     End Sub
 
     Private Sub BtnXSqr_Click(sender As Object, e As EventArgs) Handles BtnXSqr.Click
@@ -215,7 +196,7 @@
     End Sub
 
     Private Sub BtnXY_Click(sender As Object, e As EventArgs) Handles BtnXY.Click
-
+        Arithematic2(BtnXY)
     End Sub
 
     Private Sub BtnSin_Click(sender As Object, e As EventArgs) Handles BtnSin.Click
@@ -244,6 +225,14 @@
 
     Private Sub BtnMMinus_Click(sender As Object, e As EventArgs) Handles BtnMMinus.Click
         Mem = Mem - Val(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnMS_Click(sender As Object, e As EventArgs) Handles BtnMS.Click
+        TextBox1.Text = Mem
+    End Sub
+
+    Private Sub BtnPi_Click(sender As Object, e As EventArgs) Handles BtnPi.Click
+        TextBox1.Text = System.Math.PI
     End Sub
 
     Private Sub FunctionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FunctionsToolStripMenuItem.Click

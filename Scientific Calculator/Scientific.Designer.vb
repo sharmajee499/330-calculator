@@ -61,7 +61,7 @@ Partial Class Scientific
         Me.BtnMR = New System.Windows.Forms.Button()
         Me.BtnMPlus = New System.Windows.Forms.Button()
         Me.BtnMMinus = New System.Windows.Forms.Button()
-        Me.Button40 = New System.Windows.Forms.Button()
+        Me.BtnMS = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StandardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -393,7 +393,7 @@ Partial Class Scientific
         Me.BtnXY.Name = "BtnXY"
         Me.BtnXY.Size = New System.Drawing.Size(60, 43)
         Me.BtnXY.TabIndex = 31
-        Me.BtnXY.Text = " x ꙷ"
+        Me.BtnXY.Text = "xʸ"
         Me.BtnXY.UseVisualStyleBackColor = True
         '
         'BtnSin
@@ -467,15 +467,15 @@ Partial Class Scientific
         Me.BtnMMinus.Text = "M-"
         Me.BtnMMinus.UseVisualStyleBackColor = True
         '
-        'Button40
+        'BtnMS
         '
-        Me.Button40.Location = New System.Drawing.Point(241, 202)
-        Me.Button40.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button40.Name = "Button40"
-        Me.Button40.Size = New System.Drawing.Size(60, 43)
-        Me.Button40.TabIndex = 39
-        Me.Button40.Text = "Button40"
-        Me.Button40.UseVisualStyleBackColor = True
+        Me.BtnMS.Location = New System.Drawing.Point(241, 202)
+        Me.BtnMS.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnMS.Name = "BtnMS"
+        Me.BtnMS.Size = New System.Drawing.Size(60, 43)
+        Me.BtnMS.TabIndex = 39
+        Me.BtnMS.Text = "MS"
+        Me.BtnMS.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -555,7 +555,7 @@ Partial Class Scientific
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Button40)
+        Me.Controls.Add(Me.BtnMS)
         Me.Controls.Add(Me.BtnMMinus)
         Me.Controls.Add(Me.BtnMPlus)
         Me.Controls.Add(Me.BtnMR)
@@ -645,7 +645,7 @@ Partial Class Scientific
     Friend WithEvents BtnMR As Button
     Friend WithEvents BtnMPlus As Button
     Friend WithEvents BtnMMinus As Button
-    Friend WithEvents Button40 As Button
+    Friend WithEvents BtnMS As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StandardToolStripMenuItem As ToolStripMenuItem
