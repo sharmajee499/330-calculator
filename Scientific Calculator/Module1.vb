@@ -3,6 +3,9 @@
     'still displays when an arithmetic is used
     Public lastWasEqual = False
 
+    Public lastWasArith2 = False
+    Public lastWasEqual2 = False
+
     Sub ShowValue(ByVal Butt As Button)
         If lastWasArith = True Then
             Form1.TextBox1.Text = ""
@@ -14,14 +17,22 @@
             Form1.TextBox2.Text = Form1.TextBox1.Text
         End If
         Form1.TextBox1.Text = (Form1.TextBox1.Text & Butt.Text)
+        Form1.TextBox2.Text = (Form1.TextBox2.Text & Butt.Text)
+
     End Sub
 
     Sub ShowValue2(ByVal Butt As Button)
-        If lastWasArith = True Then
+        If lastWasArith2 = True Then
             Scientific.TextBox1.Text = ""
-            lastWasArith = False
+            lastWasArith2 = False
+        End If
+        If lastWasEqual2 Then
+            Scientific.TextBox2.Text = ""
+            Scientific.TextBox2.Text = Scientific.TextBox1.Text
         End If
         Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
+        Scientific.TextBox2.Text = (Scientific.TextBox2.Text & Butt.Text)
+
     End Sub
 
     Sub Arithematic(ByVal butt As Button)
@@ -39,11 +50,18 @@
     End Sub
 
     Sub Arithematic2(ByVal butt As Button)
+        If lastWasEqual2 Then
+            Scientific.TextBox2.Text = ""
+            Scientific.TextBox2.Text = Scientific.TextBox1.Text
+        End If
+        lastWasEqual2 = False
         Scientific.Value1 = Val(Scientific.TextBox1.Text)
         Scientific.Oper = butt.Text
         Scientific.TextBox1.Text = ""
         Scientific.TextBox1.Text = Scientific.Value1
-        lastWasArith = True
+        Scientific.TextBox2.Text += Scientific.Oper
+
+        lastWasArith2 = True
     End Sub
 
     Sub Calculate()
@@ -60,6 +78,7 @@
         End Select
     End Sub
     Sub Calculate2()
+        lastWasEqual2 = True
         Select Case Scientific.Oper
             Case "+"
                 Scientific.TextBox1.Text = Scientific.Value1 + Val(Scientific.TextBox1.Text)

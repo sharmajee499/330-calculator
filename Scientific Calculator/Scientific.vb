@@ -138,10 +138,12 @@
 
     Private Sub BtnCE_Click(sender As Object, e As EventArgs) Handles BtnCE.Click
         TextBox1.Text = 0
+        TextBox2.Text = 0
     End Sub
 
     Private Sub BtnC_Click(sender As Object, e As EventArgs) Handles BtnC.Click
         TextBox1.Text = ""
+        TextBox2.Text = ""
     End Sub
 
     Private Sub BtnLBracket_Click(sender As Object, e As EventArgs) Handles BtnLBracket.Click
