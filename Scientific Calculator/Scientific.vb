@@ -194,7 +194,7 @@
     End Sub
 
     Private Sub BtnXY_Click(sender As Object, e As EventArgs) Handles BtnXY.Click
-
+        Arithematic2(BtnXY)
     End Sub
 
     Private Sub BtnSin_Click(sender As Object, e As EventArgs) Handles BtnSin.Click
@@ -223,6 +223,10 @@
 
     Private Sub BtnMMinus_Click(sender As Object, e As EventArgs) Handles BtnMMinus.Click
         Mem = Mem - Val(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnMS_Click(sender As Object, e As EventArgs) Handles BtnMS.Click
+        TextBox1.Text = Mem
     End Sub
 
     Private Sub BtnPi_Click(sender As Object, e As EventArgs) Handles BtnPi.Click

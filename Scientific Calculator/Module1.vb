@@ -71,6 +71,8 @@
                 Scientific.TextBox1.Text = Scientific.Value1 / Val(Scientific.TextBox1.Text)
             Case "Mod"
                 Scientific.TextBox1.Text = Scientific.Value1 Mod Val(Scientific.TextBox1.Text)
+            Case "xʸ"
+                Scientific.TextBox1.Text = Scientific.Value1 ^ Val(Scientific.TextBox1.Text)
         End Select
     End Sub
     Sub ShowHistory()
