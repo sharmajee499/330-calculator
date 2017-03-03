@@ -11,83 +11,43 @@
     End Sub
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 7
-        Else
-            ShowValue(Btn7)
-        End If
+        ShowValue(Btn7)
     End Sub
 
     Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles Btn8.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 8
-        Else
-            ShowValue(Btn8)
-        End If
+        ShowValue(Btn8)
     End Sub
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles Btn0.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 0
-        Else
-            ShowValue(Btn0)
-        End If
+        ShowValue(Btn0)
     End Sub
 
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 1
-        Else
-            ShowValue(Btn1)
-        End If
+        ShowValue(Btn1)
     End Sub
 
     Private Sub Btn2_Click(sender As Object, e As EventArgs) Handles Btn2.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 2
-        Else
-            ShowValue(Btn2)
-        End If
+        ShowValue(Btn2)
     End Sub
 
     Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles Btn3.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 3
-        Else
-            ShowValue(Btn3)
-        End If
+        ShowValue(Btn3)
     End Sub
 
     Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles Btn4.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 4
-        Else
-            ShowValue(Btn4)
-        End If
+        ShowValue(Btn4)
     End Sub
 
     Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles Btn5.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 5
-        Else
-            ShowValue(Btn5)
-        End If
+        ShowValue(Btn5)
     End Sub
 
     Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles Btn6.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 6
-        Else
-            ShowValue(Btn6)
-        End If
+        ShowValue(Btn6)
     End Sub
 
     Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Btn9.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 9
-        Else
-            ShowValue(Btn9)
-        End If
+        ShowValue(Btn9)
     End Sub
 
     Private Sub BtnDiv_Click(sender As Object, e As EventArgs) Handles BtnDiv.Click
@@ -190,8 +150,8 @@
         Me.Hide()
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-
+    Private Sub BtnXSqr_Click(sender As Object, e As EventArgs) Handles BtnXSqr.Click
+        TextBox1.Text = Val(TextBox1.Text) ^ 2
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

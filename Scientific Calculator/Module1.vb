@@ -16,9 +16,13 @@
             Form1.TextBox2.Text = ""
             Form1.TextBox2.Text = Form1.TextBox1.Text
         End If
-        Form1.TextBox1.Text = (Form1.TextBox1.Text & Butt.Text)
-        Form1.TextBox2.Text = (Form1.TextBox2.Text & Butt.Text)
-
+        If Form1.TextBox1.Text = "0" Then
+            Form1.TextBox1.Text = Butt.Text
+            Form1.TextBox2.Text = Butt.Text
+        Else
+            Form1.TextBox1.Text = (Form1.TextBox1.Text & Butt.Text)
+            Form1.TextBox2.Text = (Form1.TextBox2.Text & Butt.Text)
+        End If
     End Sub
 
     Sub ShowValue2(ByVal Butt As Button)
@@ -30,8 +34,13 @@
             Scientific.TextBox2.Text = ""
             Scientific.TextBox2.Text = Scientific.TextBox1.Text
         End If
-        Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
-        Scientific.TextBox2.Text = (Scientific.TextBox2.Text & Butt.Text)
+        If Scientific.TextBox1.Text = "0" Then
+            Scientific.TextBox1.Text = Butt.Text
+            Scientific.TextBox2.Text = Butt.Text
+        Else
+            Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
+            Scientific.TextBox2.Text = (Scientific.TextBox2.Text & Butt.Text)
+        End If
 
     End Sub
 
@@ -92,6 +101,10 @@
                 Scientific.TextBox1.Text = Scientific.Value1 Mod Val(Scientific.TextBox1.Text)
             Case "xʸ"
                 Scientific.TextBox1.Text = Scientific.Value1 ^ Val(Scientific.TextBox1.Text)
+            Case "Exp"
+                Scientific.TextBox1.Text = Scientific.Value1 * (10 ^ Val(Scientific.TextBox1.Text))
+            Case "ʸ√ x"
+                Scientific.TextBox1.Text = Scientific.Value1 ^ (1 / Val(Scientific.TextBox1.Text))
         End Select
     End Sub
     Sub ShowHistory()

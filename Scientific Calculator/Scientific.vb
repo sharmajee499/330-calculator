@@ -2,6 +2,7 @@
 
     Public Value1, Value2, Mem As Double
     Public Oper As Char
+    Public second As Boolean = True
 
     Private Sub StandardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StandardToolStripMenuItem.Click
         Form1.Show()
@@ -27,75 +28,39 @@
     End Sub
 
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 1
-        Else
-            ShowValue2(Btn1)
-        End If
+        ShowValue2(Btn1)
     End Sub
 
     Private Sub Btn2_Click(sender As Object, e As EventArgs) Handles Btn2.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 2
-        Else
-            ShowValue2(Btn2)
-        End If
+        ShowValue2(Btn2)
     End Sub
 
     Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles Btn3.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 3
-        Else
-            ShowValue2(Btn3)
-        End If
+        ShowValue2(Btn3)
     End Sub
 
     Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles Btn4.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 4
-        Else
-            ShowValue2(Btn4)
-        End If
+        ShowValue2(Btn4)
     End Sub
 
     Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles Btn5.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 5
-        Else
-            ShowValue2(Btn5)
-        End If
+        ShowValue2(Btn5)
     End Sub
 
     Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles Btn6.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 6
-        Else
-            ShowValue2(Btn6)
-        End If
+        ShowValue2(Btn6)
     End Sub
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 7
-        Else
-            ShowValue2(Btn7)
-        End If
+        ShowValue2(Btn7)
     End Sub
 
     Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles Btn8.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 8
-        Else
-            ShowValue2(Btn8)
-        End If
+        ShowValue2(Btn8)
     End Sub
 
     Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Btn9.Click
-        If TextBox1.Text = "0" Then
-            TextBox1.Text = 9
-        Else
-            ShowValue2(Btn9)
-        End If
+        ShowValue2(Btn9)
     End Sub
 
     Private Sub BtnDot_Click(sender As Object, e As EventArgs) Handles BtnDot.Click
@@ -158,6 +123,7 @@
         TextBox1.Text = Val(TextBox1.Text) * -1
     End Sub
 
+    'Factorial Function'
     Private Function Fact(ByVal n As Integer)
         If (n = 0) Then
             Fact = 1
@@ -180,11 +146,14 @@
     End Sub
 
     Private Sub BtnLog_Click(sender As Object, e As EventArgs) Handles BtnLog.Click
-        TextBox1.Text = Math.Log(TextBox1.Text)
+        TextBox1.Text = Math.Log10(TextBox1.Text)
     End Sub
 
+    Public exp As Boolean = False
     Private Sub BtnExp_Click(sender As Object, e As EventArgs) Handles BtnExp.Click
-        TextBox1.Text = Math.Exp(TextBox1.Text)
+        Arithematic2(BtnExp)
+        TextBox1.Text = Value1 & (".e+") & Value2
+        exp = True
     End Sub
 
     Private Sub BtnMod_Click(sender As Object, e As EventArgs) Handles BtnMod.Click
@@ -192,7 +161,7 @@
     End Sub
 
     Private Sub BtnXSqr_Click(sender As Object, e As EventArgs) Handles BtnXSqr.Click
-        TextBox1.Text = TextBox1.Text ^ 2
+        TextBox1.Text = Val(TextBox1.Text) ^ 2
     End Sub
 
     Private Sub BtnXY_Click(sender As Object, e As EventArgs) Handles BtnXY.Click
@@ -233,6 +202,76 @@
 
     Private Sub BtnPi_Click(sender As Object, e As EventArgs) Handles BtnPi.Click
         TextBox1.Text = System.Math.PI
+    End Sub
+
+    Private Sub Btn2nd_Click(sender As Object, e As EventArgs) Handles Btn2nd.Click
+        If second = True Then
+            GroupBox1.Hide()
+            GroupBox2.Show()
+            second = False
+        Else
+            GroupBox1.Show()
+            GroupBox2.Hide()
+            second = True
+        End If
+    End Sub
+
+    Private Sub BtnOneOver_Click(sender As Object, e As EventArgs) Handles BtnOneOver.Click
+        TextBox1.Text = 1 / Val(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnXCube_Click(sender As Object, e As EventArgs) Handles BtnXCube.Click
+        TextBox1.Text = Val(TextBox1.Text) ^ 3
+    End Sub
+
+    Private Sub BtnRoot_Click(sender As Object, e As EventArgs) Handles BtnRoot.Click
+        Arithematic2(BtnRoot)
+    End Sub
+
+    Private Sub BtnInverseSin_Click(sender As Object, e As EventArgs) Handles BtnInverseSin.Click
+        TextBox1.Text = Math.Asin(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnInverseCos_Click(sender As Object, e As EventArgs) Handles BtnInverseCos.Click
+        TextBox1.Text = Math.Acos(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnInverseTan_Click(sender As Object, e As EventArgs) Handles BtnInverseTan.Click
+        TextBox1.Text = Math.Atan(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnE_Click(sender As Object, e As EventArgs) Handles BtnE.Click
+        TextBox1.Text = Math.Exp(TextBox1.Text)
+    End Sub
+
+    Private Sub BtnLn_Click(sender As Object, e As EventArgs) Handles BtnLn.Click
+        TextBox1.Text = Math.Log(TextBox1.Text)
+    End Sub
+
+    Public Degrees As Double
+    Public Minutes As Double
+    Public Seconds As Double
+    Private Sub BtnDMS_Click(sender As Object, e As EventArgs) Handles BtnDMS.Click
+        Degrees = Int(TextBox1.Text)
+        Minutes = Int((TextBox1.Text - (Int(TextBox1.Text))) * 60)
+        Seconds = (((TextBox1.Text - (Int(TextBox1.Text))) * 60) - Minutes) * 60
+        Seconds = Replace(Seconds, ".", "")
+        If Degrees And Minutes And Seconds > 0 Then
+            TextBox1.Text = Degrees & "." & Minutes & Seconds
+        ElseIf Degrees And Minutes > 0 Then
+            TextBox1.Text = Degrees & "." & Minutes
+        ElseIf Degrees > 0 Then
+            TextBox1.Text = Degrees
+        End If
+    End Sub
+
+    Public DegResult As Double
+    Private Sub BtnDeg_Click(sender As Object, e As EventArgs) Handles BtnDeg.Click
+        Degrees = Int(TextBox1.Text)
+        Minutes = Math.Round(((Math.Truncate(TextBox1.Text * 100) / 100) - Degrees) * 100)
+        Seconds = (((TextBox1.Text - Degrees) - (Minutes / 100)) * 10000)
+        DegResult = (((Seconds / 60) + Minutes) / 60) + Degrees
+        TextBox1.Text = DegResult
     End Sub
 
     Private Sub FunctionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FunctionsToolStripMenuItem.Click
