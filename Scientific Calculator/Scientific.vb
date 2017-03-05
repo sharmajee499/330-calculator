@@ -2,7 +2,8 @@
 
     Public Value1, Value2, Mem As Double
     Public Oper As Char
-    Public second As Boolean = True
+    Public secondBtn As Boolean = True
+    Public RDG As Integer = 0 'Radian, Degree, Gradian selector'
 
     Private Sub StandardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StandardToolStripMenuItem.Click
         Form1.Show()
@@ -112,7 +113,8 @@
     End Sub
 
     Private Sub BtnLBracket_Click(sender As Object, e As EventArgs) Handles BtnLBracket.Click
-        TextBox1.Text += "("
+
+        TextBox1.Text = "("
     End Sub
 
     Private Sub BtnRBracket_Click(sender As Object, e As EventArgs) Handles BtnRBracket.Click
@@ -169,15 +171,33 @@
     End Sub
 
     Private Sub BtnSin_Click(sender As Object, e As EventArgs) Handles BtnSin.Click
-        TextBox1.Text = Math.Sin(TextBox1.Text)
+        If RDG = 0 Then
+            TextBox1.Text = Math.Sin(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Sin(TextBox1.Text * (System.Math.PI / 180))
+        Else
+            TextBox1.Text = Math.Sin(TextBox1.Text * (System.Math.PI / 200))
+        End If
     End Sub
 
     Private Sub BtnCos_Click(sender As Object, e As EventArgs) Handles BtnCos.Click
-        TextBox1.Text = Math.Cos(TextBox1.Text)
+        If RDG = 0 Then
+            TextBox1.Text = Math.Cos(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Cos(TextBox1.Text * (System.Math.PI / 180))
+        Else
+            TextBox1.Text = Math.Cos(TextBox1.Text * (System.Math.PI / 200))
+        End If
     End Sub
 
     Private Sub BtnTan_Click(sender As Object, e As EventArgs) Handles BtnTan.Click
-        TextBox1.Text = Math.Tan(TextBox1.Text)
+        If RDG = 0 Then
+            TextBox1.Text = Math.Tan(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Tan(TextBox1.Text * (System.Math.PI / 180))
+        Else
+            TextBox1.Text = Math.Tan(TextBox1.Text * (System.Math.PI / 200))
+        End If
     End Sub
 
     Private Sub BtnMC_Click(sender As Object, e As EventArgs) Handles BtnMC.Click
@@ -205,14 +225,14 @@
     End Sub
 
     Private Sub Btn2nd_Click(sender As Object, e As EventArgs) Handles Btn2nd.Click
-        If second = True Then
+        If secondBtn = True Then
             GroupBox1.Hide()
             GroupBox2.Show()
-            second = False
+            secondBtn = False
         Else
             GroupBox1.Show()
             GroupBox2.Hide()
-            second = True
+            secondBtn = True
         End If
     End Sub
 
@@ -229,15 +249,33 @@
     End Sub
 
     Private Sub BtnInverseSin_Click(sender As Object, e As EventArgs) Handles BtnInverseSin.Click
-        TextBox1.Text = Math.Asin(TextBox1.Text)
+        If RDG = 0 Then
+            TextBox1.Text = Math.Asin(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Asin(TextBox1.Text) * (180 / Math.PI)
+        Else
+            TextBox1.Text = Math.Asin(TextBox1.Text) * (200 / System.Math.PI)
+        End If
     End Sub
 
     Private Sub BtnInverseCos_Click(sender As Object, e As EventArgs) Handles BtnInverseCos.Click
-        TextBox1.Text = Math.Acos(TextBox1.Text)
+        If RDG = 0 Then
+            TextBox1.Text = Math.Acos(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Acos(TextBox1.Text) * (180 / System.Math.PI)
+        Else
+            TextBox1.Text = Math.Acos(TextBox1.Text) * (200 / System.Math.PI)
+        End If
     End Sub
 
     Private Sub BtnInverseTan_Click(sender As Object, e As EventArgs) Handles BtnInverseTan.Click
-        TextBox1.Text = Math.Atan(TextBox1.Text)
+        If RDG = 0 Then
+            TextBox1.Text = Math.Atan(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Atan(TextBox1.Text) * (180 / System.Math.PI)
+        Else
+            TextBox1.Text = Math.Atan(TextBox1.Text) * (200 / System.Math.PI)
+        End If
     End Sub
 
     Private Sub BtnE_Click(sender As Object, e As EventArgs) Handles BtnE.Click
@@ -272,6 +310,72 @@
         Seconds = (((TextBox1.Text - Degrees) - (Minutes / 100)) * 10000)
         DegResult = (((Seconds / 60) + Minutes) / 60) + Degrees
         TextBox1.Text = DegResult
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+        RDG = 0
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+        RDG = 1
+    End Sub
+
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
+        RDG = 2
+    End Sub
+
+    Private Sub BtnSinh_Click(sender As Object, e As EventArgs) Handles BtnSinh.Click
+        If RDG = 0 Then
+            TextBox1.Text = Math.Sinh(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Sinh(TextBox1.Text)
+        Else
+            TextBox1.Text = Math.Sinh(TextBox1.Text)
+        End If
+    End Sub
+
+    Private Sub BtnCosh_Click(sender As Object, e As EventArgs) Handles BtnCosh.Click
+        If RDG = 0 Then
+            TextBox1.Text = Math.Cosh(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Cosh(TextBox1.Text)
+        Else
+            TextBox1.Text = Math.Cosh(TextBox1.Text)
+        End If
+    End Sub
+
+    Private Sub BtnTanh_Click(sender As Object, e As EventArgs) Handles BtnTanh.Click
+        If RDG = 0 Then
+            TextBox1.Text = Math.Tanh(TextBox1.Text)
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Tanh(TextBox1.Text)
+        Else
+            TextBox1.Text = Math.Tanh(TextBox1.Text)
+        End If
+    End Sub
+
+    Private Sub BtnInverseSinh_Click(sender As Object, e As EventArgs) Handles BtnInverseSinh.Click
+        If RDG = 0 Then
+            TextBox1.Text = Math.Log(TextBox1.Text + Math.Sqrt(TextBox1.Text * TextBox1.Text + 1))
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Log(TextBox1.Text + Math.Sqrt(TextBox1.Text * TextBox1.Text + 1))
+        Else
+            TextBox1.Text = Math.Log(TextBox1.Text + Math.Sqrt(TextBox1.Text * TextBox1.Text + 1))
+        End If
+    End Sub
+
+    Private Sub BtnInverseCosh_Click(sender As Object, e As EventArgs) Handles BtnInverseCosh.Click
+        If RDG = 0 Then
+            TextBox1.Text = Math.Log(TextBox1.Text + Math.Sqrt(TextBox1.Text * TextBox1.Text - 1))
+        ElseIf RDG = 1 Then
+            TextBox1.Text = Math.Log(TextBox1.Text + Math.Sqrt(TextBox1.Text * TextBox1.Text - 1))
+        Else
+            TextBox1.Text = Math.Log(TextBox1.Text + Math.Sqrt(TextBox1.Text * TextBox1.Text - 1))
+        End If
+    End Sub
+
+    Private Sub BtnInverseTanh_Click(sender As Object, e As EventArgs) Handles BtnInverseTanh.Click
+
     End Sub
 
     Private Sub FunctionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FunctionsToolStripMenuItem.Click
