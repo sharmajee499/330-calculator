@@ -1,9 +1,14 @@
 ﻿Public Class Scientific
 
-    Public Value1, Value2, Mem As Double
+    Public Value1, Value2, Value3, Mem As Double
     Public Oper As Char
     Public secondBtn As Boolean = True
     Public RDG As Integer = 0 'Radian, Degree, Gradian selector'
+    Public bracket As Boolean = False '---Bracket Yes or No'
+    Public contOper As Integer = 0
+    Public contNum As Boolean = False
+    Public halt As Boolean = True
+    Public lastWasEqual2 As Boolean = False
 
     Private Sub StandardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StandardToolStripMenuItem.Click
         Form1.Show()
@@ -26,42 +31,52 @@
 
     Private Sub Btn0_Click(sender As Object, e As EventArgs) Handles Btn0.Click
         ShowValue2(Btn0)
+        halt = False
     End Sub
 
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles Btn1.Click
         ShowValue2(Btn1)
+        halt = False
     End Sub
 
     Private Sub Btn2_Click(sender As Object, e As EventArgs) Handles Btn2.Click
         ShowValue2(Btn2)
+        halt = False
     End Sub
 
     Private Sub Btn3_Click(sender As Object, e As EventArgs) Handles Btn3.Click
         ShowValue2(Btn3)
+        halt = False
     End Sub
 
     Private Sub Btn4_Click(sender As Object, e As EventArgs) Handles Btn4.Click
         ShowValue2(Btn4)
+        halt = False
     End Sub
 
     Private Sub Btn5_Click(sender As Object, e As EventArgs) Handles Btn5.Click
         ShowValue2(Btn5)
+        halt = False
     End Sub
 
     Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles Btn6.Click
         ShowValue2(Btn6)
+        halt = False
     End Sub
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
         ShowValue2(Btn7)
+        halt = False
     End Sub
 
     Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles Btn8.Click
         ShowValue2(Btn8)
+        halt = False
     End Sub
 
     Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Btn9.Click
         ShowValue2(Btn9)
+        halt = False
     End Sub
 
     Private Sub BtnDot_Click(sender As Object, e As EventArgs) Handles BtnDot.Click
@@ -71,19 +86,111 @@
     End Sub
 
     Private Sub BtnDiv_Click(sender As Object, e As EventArgs) Handles BtnDiv.Click
-        Arithematic2(BtnDiv)
+        If contOper = 0 Then
+            Arithematic2(BtnDiv)
+            contOper = 1
+            contNum = True
+        ElseIf contOper = 1 Then
+            If halt = False Then
+                Value2 = Val(TextBox1.Text)
+                Calculate2()
+                Arithematic2(BtnDiv)
+                Value3 = TextBox1.Text
+                ShowHistory()
+                contOper = 2
+                contNum = True
+                halt = True
+            End If
+        Else
+            If halt = False Then
+                Calculate2()
+                Arithematic2(BtnDiv)
+                Value3 = TextBox1.Text
+                contNum = True
+                halt = True
+            End If
+        End If
     End Sub
 
     Private Sub BtnMultiply_Click(sender As Object, e As EventArgs) Handles BtnMultiply.Click
-        Arithematic2(BtnMultiply)
+        If contOper = 0 Then
+            Arithematic2(BtnMultiply)
+            contOper = 1
+            contNum = True
+        ElseIf contOper = 1 Then
+            If halt = False Then
+                Value2 = Val(TextBox1.Text)
+                Calculate2()
+                Arithematic2(BtnMultiply)
+                Value3 = TextBox1.Text
+                ShowHistory()
+                contOper = 2
+                contNum = True
+                halt = True
+            End If
+        Else
+            If halt = False Then
+                Calculate2()
+                Arithematic2(BtnMultiply)
+                Value3 = TextBox1.Text
+                contNum = True
+                halt = True
+            End If
+        End If
     End Sub
 
     Private Sub BtnMinus_Click(sender As Object, e As EventArgs) Handles BtnMinus.Click
-        Arithematic2(BtnMinus)
+        If contOper = 0 Then
+            Arithematic2(BtnMinus)
+            contOper = 1
+            contNum = True
+        ElseIf contOper = 1 Then
+            If halt = False Then
+                Value2 = Val(TextBox1.Text)
+                Calculate2()
+                Arithematic2(BtnMinus)
+                Value3 = TextBox1.Text
+                ShowHistory()
+                contOper = 2
+                contNum = True
+                halt = True
+            End If
+        Else
+            If halt = False Then
+                Calculate2()
+                Arithematic2(BtnMinus)
+                Value3 = TextBox1.Text
+                contNum = True
+                halt = True
+            End If
+        End If
     End Sub
 
     Private Sub BtnPlus_Click(sender As Object, e As EventArgs) Handles BtnPlus.Click
-        Arithematic2(BtnPlus)
+        If contOper = 0 Then
+            Arithematic2(BtnPlus)
+            contOper = 1
+            contNum = True
+        ElseIf contOper = 1 Then
+            If halt = False Then
+                Value2 = Val(TextBox1.Text)
+                Calculate2()
+                Arithematic2(BtnPlus)
+                Value3 = TextBox1.Text
+                ShowHistory()
+                contOper = 2
+                contNum = True
+                halt = True
+            End If
+        Else
+            If halt = False Then
+                Calculate2()
+                Arithematic2(BtnPlus)
+                Value3 = TextBox1.Text
+                contNum = True
+                halt = True
+            End If
+        End If
     End Sub
 
     Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
@@ -92,6 +199,8 @@
         ShowHistory()
         Value2 = 0
         SayIt2()
+        contOper = 0
+        lastWasEqual2 = True
     End Sub
 
     Private Sub BtnDel_Click(sender As Object, e As EventArgs) Handles BtnDel.Click
@@ -105,20 +214,34 @@
     Private Sub BtnCE_Click(sender As Object, e As EventArgs) Handles BtnCE.Click
         TextBox1.Text = 0
         TextBox2.Text = 0
+        contOper = 0
+        contNum = False
     End Sub
 
     Private Sub BtnC_Click(sender As Object, e As EventArgs) Handles BtnC.Click
         TextBox1.Text = ""
         TextBox2.Text = ""
+        contOper = 0
+        contNum = False
     End Sub
 
     Private Sub BtnLBracket_Click(sender As Object, e As EventArgs) Handles BtnLBracket.Click
-
-        TextBox1.Text = "("
+        If bracket = False Then
+            bracket = True
+        End If
     End Sub
 
+    Public bracketNum As Double
     Private Sub BtnRBracket_Click(sender As Object, e As EventArgs) Handles BtnRBracket.Click
-        TextBox1.Text += ")"
+        If bracket = True Then
+            Value2 = Val(TextBox1.Text)
+            Calculate2()
+            ShowHistory()
+            Value2 = 0
+            contOper = 0
+            bracketNum = TextBox1.Text
+            bracket = False
+        End If
     End Sub
 
     Private Sub BtnPlusMinus_Click(sender As Object, e As EventArgs) Handles BtnPlusMinus.Click
@@ -145,6 +268,7 @@
 
     Private Sub Btn10X_Click(sender As Object, e As EventArgs) Handles Btn10X.Click
         TextBox1.Text = 10 ^ TextBox1.Text
+        lastWasEqual2 = True
     End Sub
 
     Private Sub BtnLog_Click(sender As Object, e As EventArgs) Handles BtnLog.Click
@@ -167,7 +291,30 @@
     End Sub
 
     Private Sub BtnXY_Click(sender As Object, e As EventArgs) Handles BtnXY.Click
-        Arithematic2(BtnXY)
+        If contOper = 0 Then
+            Arithematic2(BtnXY)
+            contOper = 1
+            contNum = True
+        ElseIf contOper = 1 Then
+            If halt = False Then
+                Value2 = Val(TextBox1.Text)
+                Calculate2()
+                Arithematic2(BtnXY)
+                Value3 = TextBox1.Text
+                ShowHistory()
+                contOper = 2
+                contNum = True
+                halt = True
+            End If
+        Else
+            If halt = False Then
+                Calculate2()
+                Arithematic2(BtnXY)
+                Value3 = TextBox1.Text
+                contNum = True
+                halt = True
+            End If
+        End If
     End Sub
 
     Private Sub BtnSin_Click(sender As Object, e As EventArgs) Handles BtnSin.Click
