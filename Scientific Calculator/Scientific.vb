@@ -208,8 +208,12 @@
     End Sub
 
     Private Sub BtnDel_Click(sender As Object, e As EventArgs) Handles BtnDel.Click
-        TextBox1.Text = Mid(TextBox1.Text, 1, Len(TextBox1.Text) - 1)
-        TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
+        If Len(TextBox1.Text) > 0 Then
+            TextBox1.Text = Mid(TextBox1.Text, 1, Len(TextBox1.Text) - 1)
+            TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
+        ElseIf Len(TextBox2.Text) > 0 Then
+            TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
+        End If
     End Sub
 
     Private Sub Scientific_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -229,8 +233,8 @@
     End Sub
 
     Private Sub BtnC_Click(sender As Object, e As EventArgs) Handles BtnC.Click
-        TextBox1.Text = ""
-        TextBox2.Text = ""
+        TextBox1.Text = 0
+        TextBox2.Text = 0
         contOper = 0
         Value1 = 0
         Value2 = 0

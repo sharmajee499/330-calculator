@@ -602,9 +602,9 @@ Partial Class Scientific
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(190, 36)
+        Me.TextBox2.Location = New System.Drawing.Point(12, 36)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(278, 20)
         Me.TextBox2.TabIndex = 42
         '
         'GroupBox1

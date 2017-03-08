@@ -17,7 +17,7 @@
         End If
         If Form1.TextBox1.Text = "0" Or Form1.contNum = True Or Form1.lastWasEqual = True Then
             Form1.TextBox1.Text = Butt.Text
-            If Form1.TextBox1.Text = "0" Then
+            If Form1.TextBox2.Text = "0" Then
                 Form1.TextBox2.Text = Butt.Text
             Else
                 Form1.TextBox2.Text += Butt.Text
@@ -154,7 +154,7 @@
             Form1.TextBox2.Text & vbCrLf &
             "---------------------------------------------------" & vbCrLf &
             Form1.TextBox1.Text & vbCrLf &
-            "---------------------------------------------------" & vbCrLf
+            "---------------------------------------------------" & vbCrLf & vbCrLf
     End Sub
     Sub ShowHistory2()
         Scientific.History.Text =
@@ -182,6 +182,12 @@
         Dim format As String = FormatExpression(source)
         Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
         Scientific.TextBox1.Text = Evaluate(rpn)
+    End Sub
+    Sub getValue2()
+        Dim source As String = Form1.TextBox2.Text
+        Dim format As String = FormatExpression(source)
+        Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
+        Form1.TextBox1.Text = Evaluate(rpn)
     End Sub
     Private Function FormatExpression(ByVal expression As String) As String
         Dim format As String = expression.Replace(" ", String.Empty)

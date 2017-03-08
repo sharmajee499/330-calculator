@@ -170,7 +170,7 @@
 
     Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
         Value2 = Val(TextBox1.Text)
-        Calculate()
+        getValue2()
         ShowHistory()
         lastWasEqual = True
         Value2 = 0
@@ -203,7 +203,12 @@
     End Sub
 
     Private Sub BtnDel_Click(sender As Object, e As EventArgs) Handles BtnDel.Click
-        TextBox1.Text = Val(TextBox1.Text) \ 10
+        If Len(TextBox1.Text) > 0 Then
+            TextBox1.Text = Mid(TextBox1.Text, 1, Len(TextBox1.Text) - 1)
+            TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
+        ElseIf Len(TextBox2.Text) > 0 Then
+            TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
+        End If
     End Sub
 
     Private Sub BtnMPlus_Click(sender As Object, e As EventArgs) Handles BtnMPlus.Click
@@ -211,8 +216,8 @@
     End Sub
 
     Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
-        TextBox1.Text = ""
-        TextBox2.Text = ""
+        TextBox1.Text = 0
+        TextBox2.Text = 0
         contOper = 0
         Value1 = 0
         Value2 = 0
