@@ -73,7 +73,13 @@ Partial Class Scientific
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BtnTanh = New System.Windows.Forms.Button()
+        Me.BtnCosh = New System.Windows.Forms.Button()
+        Me.BtnSinh = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.BtnInverseTanh = New System.Windows.Forms.Button()
+        Me.BtnInverseCosh = New System.Windows.Forms.Button()
+        Me.BtnInverseSinh = New System.Windows.Forms.Button()
         Me.BtnOneOver = New System.Windows.Forms.Button()
         Me.BtnE = New System.Windows.Forms.Button()
         Me.BtnLn = New System.Windows.Forms.Button()
@@ -88,12 +94,8 @@ Partial Class Scientific
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.BtnSinh = New System.Windows.Forms.Button()
-        Me.BtnCosh = New System.Windows.Forms.Button()
-        Me.BtnTanh = New System.Windows.Forms.Button()
-        Me.BtnInverseSinh = New System.Windows.Forms.Button()
-        Me.BtnInverseCosh = New System.Windows.Forms.Button()
-        Me.BtnInverseTanh = New System.Windows.Forms.Button()
+        Me.BtnHistory = New System.Windows.Forms.Button()
+        Me.History = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -627,6 +629,37 @@ Partial Class Scientific
         Me.GroupBox1.TabIndex = 44
         Me.GroupBox1.TabStop = False
         '
+        'BtnTanh
+        '
+        Me.BtnTanh.Location = New System.Drawing.Point(239, 3)
+        Me.BtnTanh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnTanh.Name = "BtnTanh"
+        Me.BtnTanh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnTanh.TabIndex = 50
+        Me.BtnTanh.Text = "tanh"
+        Me.BtnTanh.UseVisualStyleBackColor = True
+        '
+        'BtnCosh
+        '
+        Me.BtnCosh.Location = New System.Drawing.Point(179, 3)
+        Me.BtnCosh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnCosh.Name = "BtnCosh"
+        Me.BtnCosh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnCosh.TabIndex = 36
+        Me.BtnCosh.Text = "cosh"
+        Me.BtnCosh.UseVisualStyleBackColor = True
+        '
+        'BtnSinh
+        '
+        Me.BtnSinh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSinh.Location = New System.Drawing.Point(119, 3)
+        Me.BtnSinh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnSinh.Name = "BtnSinh"
+        Me.BtnSinh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnSinh.TabIndex = 35
+        Me.BtnSinh.Text = "sinh"
+        Me.BtnSinh.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.BtnInverseTanh)
@@ -648,6 +681,38 @@ Partial Class Scientific
         Me.GroupBox2.Size = New System.Drawing.Size(322, 129)
         Me.GroupBox2.TabIndex = 45
         Me.GroupBox2.TabStop = False
+        '
+        'BtnInverseTanh
+        '
+        Me.BtnInverseTanh.Location = New System.Drawing.Point(240, 1)
+        Me.BtnInverseTanh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseTanh.Name = "BtnInverseTanh"
+        Me.BtnInverseTanh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseTanh.TabIndex = 37
+        Me.BtnInverseTanh.Text = "tanh⁻¹"
+        Me.BtnInverseTanh.UseVisualStyleBackColor = True
+        '
+        'BtnInverseCosh
+        '
+        Me.BtnInverseCosh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnInverseCosh.Location = New System.Drawing.Point(180, 0)
+        Me.BtnInverseCosh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseCosh.Name = "BtnInverseCosh"
+        Me.BtnInverseCosh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseCosh.TabIndex = 36
+        Me.BtnInverseCosh.Text = "cosh⁻¹"
+        Me.BtnInverseCosh.UseVisualStyleBackColor = True
+        '
+        'BtnInverseSinh
+        '
+        Me.BtnInverseSinh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnInverseSinh.Location = New System.Drawing.Point(120, 0)
+        Me.BtnInverseSinh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseSinh.Name = "BtnInverseSinh"
+        Me.BtnInverseSinh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseSinh.TabIndex = 35
+        Me.BtnInverseSinh.Text = "sinh⁻¹"
+        Me.BtnInverseSinh.UseVisualStyleBackColor = True
         '
         'BtnOneOver
         '
@@ -795,74 +860,34 @@ Partial Class Scientific
         Me.GroupBox3.TabIndex = 49
         Me.GroupBox3.TabStop = False
         '
-        'BtnSinh
+        'BtnHistory
         '
-        Me.BtnSinh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnSinh.Location = New System.Drawing.Point(119, 3)
-        Me.BtnSinh.Margin = New System.Windows.Forms.Padding(0)
-        Me.BtnSinh.Name = "BtnSinh"
-        Me.BtnSinh.Size = New System.Drawing.Size(60, 43)
-        Me.BtnSinh.TabIndex = 35
-        Me.BtnSinh.Text = "sinh"
-        Me.BtnSinh.UseVisualStyleBackColor = True
+        Me.BtnHistory.Location = New System.Drawing.Point(213, 1)
+        Me.BtnHistory.Name = "BtnHistory"
+        Me.BtnHistory.Size = New System.Drawing.Size(75, 23)
+        Me.BtnHistory.TabIndex = 50
+        Me.BtnHistory.Text = "History"
+        Me.BtnHistory.UseVisualStyleBackColor = True
         '
-        'BtnCosh
+        'History
         '
-        Me.BtnCosh.Location = New System.Drawing.Point(179, 3)
-        Me.BtnCosh.Margin = New System.Windows.Forms.Padding(0)
-        Me.BtnCosh.Name = "BtnCosh"
-        Me.BtnCosh.Size = New System.Drawing.Size(60, 43)
-        Me.BtnCosh.TabIndex = 36
-        Me.BtnCosh.Text = "cosh"
-        Me.BtnCosh.UseVisualStyleBackColor = True
-        '
-        'BtnTanh
-        '
-        Me.BtnTanh.Location = New System.Drawing.Point(239, 3)
-        Me.BtnTanh.Margin = New System.Windows.Forms.Padding(0)
-        Me.BtnTanh.Name = "BtnTanh"
-        Me.BtnTanh.Size = New System.Drawing.Size(60, 43)
-        Me.BtnTanh.TabIndex = 50
-        Me.BtnTanh.Text = "tanh"
-        Me.BtnTanh.UseVisualStyleBackColor = True
-        '
-        'BtnInverseSinh
-        '
-        Me.BtnInverseSinh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnInverseSinh.Location = New System.Drawing.Point(120, 0)
-        Me.BtnInverseSinh.Margin = New System.Windows.Forms.Padding(0)
-        Me.BtnInverseSinh.Name = "BtnInverseSinh"
-        Me.BtnInverseSinh.Size = New System.Drawing.Size(60, 43)
-        Me.BtnInverseSinh.TabIndex = 35
-        Me.BtnInverseSinh.Text = "sinh⁻¹"
-        Me.BtnInverseSinh.UseVisualStyleBackColor = True
-        '
-        'BtnInverseCosh
-        '
-        Me.BtnInverseCosh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnInverseCosh.Location = New System.Drawing.Point(180, 0)
-        Me.BtnInverseCosh.Margin = New System.Windows.Forms.Padding(0)
-        Me.BtnInverseCosh.Name = "BtnInverseCosh"
-        Me.BtnInverseCosh.Size = New System.Drawing.Size(60, 43)
-        Me.BtnInverseCosh.TabIndex = 36
-        Me.BtnInverseCosh.Text = "cosh⁻¹"
-        Me.BtnInverseCosh.UseVisualStyleBackColor = True
-        '
-        'BtnInverseTanh
-        '
-        Me.BtnInverseTanh.Location = New System.Drawing.Point(240, 1)
-        Me.BtnInverseTanh.Margin = New System.Windows.Forms.Padding(0)
-        Me.BtnInverseTanh.Name = "BtnInverseTanh"
-        Me.BtnInverseTanh.Size = New System.Drawing.Size(60, 43)
-        Me.BtnInverseTanh.TabIndex = 37
-        Me.BtnInverseTanh.Text = "tanh⁻¹"
-        Me.BtnInverseTanh.UseVisualStyleBackColor = True
+        Me.History.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.History.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.History.Location = New System.Drawing.Point(303, 36)
+        Me.History.Multiline = True
+        Me.History.Name = "History"
+        Me.History.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.History.Size = New System.Drawing.Size(279, 510)
+        Me.History.TabIndex = 51
+        Me.History.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Scientific
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(300, 547)
+        Me.ClientSize = New System.Drawing.Size(300, 551)
+        Me.Controls.Add(Me.History)
+        Me.Controls.Add(Me.BtnHistory)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBox2)
@@ -986,4 +1011,6 @@ Partial Class Scientific
     Friend WithEvents BtnInverseTanh As Button
     Friend WithEvents BtnInverseCosh As Button
     Friend WithEvents BtnInverseSinh As Button
+    Friend WithEvents BtnHistory As Button
+    Friend WithEvents History As TextBox
 End Class
