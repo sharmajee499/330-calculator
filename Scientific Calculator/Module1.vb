@@ -39,7 +39,9 @@
             Scientific.TextBox2.Text = Scientific.TextBox1.Text
         End If
         If Scientific.TextBox1.Text = "0" Or Scientific.contNum = True Or Scientific.lastWasEqual2 = True Then
-            Scientific.TextBox1.Text = Butt.Text
+            If Scientific.bracket = False Then
+                Scientific.TextBox1.Text = Butt.Text
+            End If
             If Scientific.TextBox2.Text = "0" Then
                 Scientific.TextBox2.Text = Butt.Text
             Else
@@ -47,7 +49,9 @@
             End If
             Scientific.contNum = False
         Else
-            Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
+            If Scientific.bracket = False Then
+                Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
+            End If
             Scientific.TextBox2.Text = (Scientific.TextBox2.Text & Butt.Text)
         End If
 
@@ -251,8 +255,10 @@
             New Token() With {.Pattern = "^([-+]?(\d*[.])?\d+)$", .Type = Token.TokenType.Digit, .Value = String.Empty},
             New Token() With {.Operation = New Token.MathOperation(AddressOf AddNumbers), .Pattern = "^\+$", .Precedence = 1, .Type = Token.TokenType.Operator, .Value = String.Empty},
             New Token() With {.Operation = New Token.MathOperation(AddressOf SubtractNumbers), .Pattern = "^\-$", .Precedence = 1, .Type = Token.TokenType.Operator, .Value = String.Empty},
-            New Token() With {.Operation = New Token.MathOperation(AddressOf MultiplyNumbers), .Pattern = "^×$", .Precedence = 2, .Type = Token.TokenType.Operator, .Value = String.Empty},
+            New Token() With {.Operation = New Token.MathOperation(AddressOf MultiplyNumbers), .Pattern = "^\×$", .Precedence = 2, .Type = Token.TokenType.Operator, .Value = String.Empty},
+            New Token() With {.Operation = New Token.MathOperation(AddressOf MultiplyNumbers), .Pattern = "^\*$", .Precedence = 2, .Type = Token.TokenType.Operator, .Value = String.Empty},
             New Token() With {.Operation = New Token.MathOperation(AddressOf DivideNumbers), .Pattern = "^\÷$", .Precedence = 2, .Type = Token.TokenType.Operator, .Value = String.Empty},
+            New Token() With {.Operation = New Token.MathOperation(AddressOf DivideNumbers), .Pattern = "^\/$", .Precedence = 2, .Type = Token.TokenType.Operator, .Value = String.Empty},
             New Token() With {.Operation = New Token.MathOperation(AddressOf ModuloNumbers), .Pattern = "^Mod$", .Precedence = 2, .Type = Token.TokenType.Operator, .Value = String.Empty},
             New Token() With {.Operation = New Token.MathOperation(AddressOf RaiseNumbers), .Pattern = "^\^$", .Precedence = 3, .Type = Token.TokenType.Operator, .Value = String.Empty}
         }

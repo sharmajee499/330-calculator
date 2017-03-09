@@ -523,9 +523,10 @@ Partial Class Form1
         Me.TextBox2.Location = New System.Drawing.Point(12, 35)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.TextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TextBox2.Size = New System.Drawing.Size(282, 13)
         Me.TextBox2.TabIndex = 34
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Form1
         '

@@ -606,6 +606,7 @@ Partial Class Scientific
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(278, 20)
         Me.TextBox2.TabIndex = 42
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'GroupBox1
         '

@@ -208,6 +208,7 @@
     End Sub
 
     Private Sub BtnDel_Click(sender As Object, e As EventArgs) Handles BtnDel.Click
+        lastWasEqual2 = False
         If Len(TextBox1.Text) > 0 Then
             TextBox1.Text = Mid(TextBox1.Text, 1, Len(TextBox1.Text) - 1)
             TextBox2.Text = Mid(TextBox2.Text, 1, Len(TextBox2.Text) - 1)
@@ -227,6 +228,7 @@
         Value1 = 0
         Value2 = 0
         Value3 = 0
+        lastWasEqual2 = False
         halt = False
         contNum = False
         bracket = False
@@ -239,39 +241,31 @@
         Value1 = 0
         Value2 = 0
         Value3 = 0
+        lastWasEqual2 = False
         halt = False
         contNum = False
         bracket = False
     End Sub
 
     Private Sub BtnLBracket_Click(sender As Object, e As EventArgs) Handles BtnLBracket.Click
-        bracket = True
         Value1 = 0
         Value2 = 0
         Value3 = 0
         contOper = 0
-        If TextBox1.Text = "0" Then
-            TextBox2.Text = "("
-        Else
-            TextBox2.Text += "("
-            TextBox1.Text = 0
-        End If
+        bracket = True
+        ShowValue2(BtnLBracket)
+        bracket = False
     End Sub
 
-    Public bracketNum As Double
     Private Sub BtnRBracket_Click(sender As Object, e As EventArgs) Handles BtnRBracket.Click
         Value2 = Val(TextBox1.Text)
         Calculate2()
         ShowHistory()
         Value2 = 0
         contOper = 0
-        bracketNum = TextBox1.Text
+        bracket = True
+        ShowValue2(BtnRBracket)
         bracket = False
-        If TextBox1.Text = "0" Then
-            TextBox2.Text = ")"
-        Else
-            TextBox2.Text += ")"
-        End If
     End Sub
 
     Private Sub BtnPlusMinus_Click(sender As Object, e As EventArgs) Handles BtnPlusMinus.Click
