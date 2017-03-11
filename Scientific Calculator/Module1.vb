@@ -4,7 +4,6 @@
     Public lastWasEqual = False
 
     Public lastWasArith2 = False
-    Public lastWasEqual2 = False
 
     Sub ShowValue(ByVal Butt As Button)
         If lastWasArith = True Then
@@ -16,9 +15,13 @@
             Form1.TextBox2.Text = ""
             Form1.TextBox2.Text = Form1.TextBox1.Text
         End If
-        Form1.TextBox1.Text = (Form1.TextBox1.Text & Butt.Text)
-        Form1.TextBox2.Text = (Form1.TextBox2.Text & Butt.Text)
-
+        If Form1.TextBox1.Text = "0" Then
+            Form1.TextBox1.Text = Butt.Text
+            Form1.TextBox2.Text = Butt.Text
+        Else
+            Form1.TextBox1.Text = (Form1.TextBox1.Text & Butt.Text)
+            Form1.TextBox2.Text = (Form1.TextBox2.Text & Butt.Text)
+        End If
     End Sub
 
     Sub ShowValue2(ByVal Butt As Button)
@@ -26,12 +29,18 @@
             Scientific.TextBox1.Text = ""
             lastWasArith2 = False
         End If
-        If lastWasEqual2 Then
+        If Scientific.lastWasEqual2 Then
             Scientific.TextBox2.Text = ""
             Scientific.TextBox2.Text = Scientific.TextBox1.Text
         End If
-        Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
-        Scientific.TextBox2.Text = (Scientific.TextBox2.Text & Butt.Text)
+        If Scientific.TextBox1.Text = "0" Or Scientific.contNum = True Or Scientific.lastWasEqual2 = True Then
+            Scientific.TextBox1.Text = Butt.Text
+            Scientific.TextBox2.Text += Butt.Text
+            Scientific.contNum = False
+        Else
+            Scientific.TextBox1.Text = (Scientific.TextBox1.Text & Butt.Text)
+            Scientific.TextBox2.Text = (Scientific.TextBox2.Text & Butt.Text)
+        End If
 
     End Sub
 
@@ -50,11 +59,11 @@
     End Sub
 
     Sub Arithematic2(ByVal butt As Button)
-        If lastWasEqual2 Then
+        If Scientific.lastWasEqual2 Then
             Scientific.TextBox2.Text = ""
             Scientific.TextBox2.Text = Scientific.TextBox1.Text
         End If
-        lastWasEqual2 = False
+        Scientific.lastWasEqual2 = False
         Scientific.Value1 = Val(Scientific.TextBox1.Text)
         Scientific.Oper = butt.Text
         Scientific.TextBox1.Text = ""
@@ -78,21 +87,45 @@
         End Select
     End Sub
     Sub Calculate2()
-        lastWasEqual2 = True
-        Select Case Scientific.Oper
-            Case "+"
-                Scientific.TextBox1.Text = Scientific.Value1 + Val(Scientific.TextBox1.Text)
-            Case "-"
-                Scientific.TextBox1.Text = Scientific.Value1 - Val(Scientific.TextBox1.Text)
-            Case "×"
-                Scientific.TextBox1.Text = Scientific.Value1 * Val(Scientific.TextBox1.Text)
-            Case "÷"
-                Scientific.TextBox1.Text = Scientific.Value1 / Val(Scientific.TextBox1.Text)
-            Case "Mod"
-                Scientific.TextBox1.Text = Scientific.Value1 Mod Val(Scientific.TextBox1.Text)
-            Case "xʸ"
-                Scientific.TextBox1.Text = Scientific.Value1 ^ Val(Scientific.TextBox1.Text)
-        End Select
+        If Scientific.contOper = 2 Then
+            Select Case Scientific.Oper
+                Case "+"
+                    Scientific.TextBox1.Text = Scientific.Value3 + Val(Scientific.TextBox1.Text)
+                Case "-"
+                    Scientific.TextBox1.Text = Scientific.Value3 - Val(Scientific.TextBox1.Text)
+                Case "×"
+                    Scientific.TextBox1.Text = Scientific.Value3 * Val(Scientific.TextBox1.Text)
+                Case "÷"
+                    Scientific.TextBox1.Text = Scientific.Value3 / Val(Scientific.TextBox1.Text)
+                Case "Mod"
+                    Scientific.TextBox1.Text = Scientific.Value3 Mod Val(Scientific.TextBox1.Text)
+                Case "xʸ"
+                    Scientific.TextBox1.Text = Scientific.Value3 ^ Val(Scientific.TextBox1.Text)
+                Case "Exp"
+                    Scientific.TextBox1.Text = Scientific.Value3 * (10 ^ Val(Scientific.TextBox1.Text))
+                Case "ʸ√ x"
+                    Scientific.TextBox1.Text = Scientific.Value3 ^ (1 / Val(Scientific.TextBox1.Text))
+            End Select
+        Else
+            Select Case Scientific.Oper
+                Case "+"
+                    Scientific.TextBox1.Text = Scientific.Value1 + Val(Scientific.TextBox1.Text)
+                Case "-"
+                    Scientific.TextBox1.Text = Scientific.Value1 - Val(Scientific.TextBox1.Text)
+                Case "×"
+                    Scientific.TextBox1.Text = Scientific.Value1 * Val(Scientific.TextBox1.Text)
+                Case "÷"
+                    Scientific.TextBox1.Text = Scientific.Value1 / Val(Scientific.TextBox1.Text)
+                Case "Mod"
+                    Scientific.TextBox1.Text = Scientific.Value1 Mod Val(Scientific.TextBox1.Text)
+                Case "xʸ"
+                    Scientific.TextBox1.Text = Scientific.Value1 ^ Val(Scientific.TextBox1.Text)
+                Case "Exp"
+                    Scientific.TextBox1.Text = Scientific.Value1 * (10 ^ Val(Scientific.TextBox1.Text))
+                Case "ʸ√ x"
+                    Scientific.TextBox1.Text = Scientific.Value1 ^ (1 / Val(Scientific.TextBox1.Text))
+            End Select
+        End If
     End Sub
     Sub ShowHistory()
         Form1.History.Text =

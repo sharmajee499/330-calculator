@@ -42,7 +42,7 @@ Partial Class Scientific
         Me.Btn8 = New System.Windows.Forms.Button()
         Me.Btn9 = New System.Windows.Forms.Button()
         Me.BtnMultiply = New System.Windows.Forms.Button()
-        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Btn2nd = New System.Windows.Forms.Button()
         Me.BtnCE = New System.Windows.Forms.Button()
         Me.BtnC = New System.Windows.Forms.Button()
         Me.BtnDel = New System.Windows.Forms.Button()
@@ -72,11 +72,37 @@ Partial Class Scientific
         Me.ConverterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.BtnOneOver = New System.Windows.Forms.Button()
+        Me.BtnE = New System.Windows.Forms.Button()
+        Me.BtnLn = New System.Windows.Forms.Button()
+        Me.BtnDMS = New System.Windows.Forms.Button()
+        Me.BtnDeg = New System.Windows.Forms.Button()
+        Me.BtnXCube = New System.Windows.Forms.Button()
+        Me.BtnRoot = New System.Windows.Forms.Button()
+        Me.BtnInverseSin = New System.Windows.Forms.Button()
+        Me.BtnInverseCos = New System.Windows.Forms.Button()
+        Me.BtnInverseTan = New System.Windows.Forms.Button()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.BtnSinh = New System.Windows.Forms.Button()
+        Me.BtnCosh = New System.Windows.Forms.Button()
+        Me.BtnTanh = New System.Windows.Forms.Button()
+        Me.BtnInverseSinh = New System.Windows.Forms.Button()
+        Me.BtnInverseCosh = New System.Windows.Forms.Button()
+        Me.BtnInverseTanh = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnLBracket
         '
+        Me.BtnLBracket.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLBracket.Location = New System.Drawing.Point(1, 503)
         Me.BtnLBracket.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnLBracket.Name = "BtnLBracket"
@@ -87,6 +113,7 @@ Partial Class Scientific
         '
         'BtnRBracket
         '
+        Me.BtnRBracket.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRBracket.Location = New System.Drawing.Point(61, 503)
         Me.BtnRBracket.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnRBracket.Name = "BtnRBracket"
@@ -97,6 +124,7 @@ Partial Class Scientific
         '
         'Btn0
         '
+        Me.Btn0.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn0.Location = New System.Drawing.Point(121, 503)
         Me.Btn0.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn0.Name = "Btn0"
@@ -107,6 +135,7 @@ Partial Class Scientific
         '
         'BtnDot
         '
+        Me.BtnDot.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDot.Location = New System.Drawing.Point(181, 503)
         Me.BtnDot.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnDot.Name = "BtnDot"
@@ -117,6 +146,7 @@ Partial Class Scientific
         '
         'BtnEqual
         '
+        Me.BtnEqual.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnEqual.Location = New System.Drawing.Point(241, 503)
         Me.BtnEqual.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnEqual.Name = "BtnEqual"
@@ -127,6 +157,7 @@ Partial Class Scientific
         '
         'BtnPlusMinus
         '
+        Me.BtnPlusMinus.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPlusMinus.Location = New System.Drawing.Point(1, 460)
         Me.BtnPlusMinus.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnPlusMinus.Name = "BtnPlusMinus"
@@ -137,6 +168,7 @@ Partial Class Scientific
         '
         'Btn1
         '
+        Me.Btn1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn1.Location = New System.Drawing.Point(61, 460)
         Me.Btn1.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn1.Name = "Btn1"
@@ -147,6 +179,7 @@ Partial Class Scientific
         '
         'Btn2
         '
+        Me.Btn2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn2.Location = New System.Drawing.Point(121, 460)
         Me.Btn2.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn2.Name = "Btn2"
@@ -157,6 +190,7 @@ Partial Class Scientific
         '
         'Btn3
         '
+        Me.Btn3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn3.Location = New System.Drawing.Point(181, 460)
         Me.Btn3.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn3.Name = "Btn3"
@@ -167,6 +201,7 @@ Partial Class Scientific
         '
         'BtnPlus
         '
+        Me.BtnPlus.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPlus.Location = New System.Drawing.Point(241, 460)
         Me.BtnPlus.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnPlus.Name = "BtnPlus"
@@ -177,6 +212,7 @@ Partial Class Scientific
         '
         'BtnFactorial
         '
+        Me.BtnFactorial.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnFactorial.Location = New System.Drawing.Point(1, 417)
         Me.BtnFactorial.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnFactorial.Name = "BtnFactorial"
@@ -187,6 +223,7 @@ Partial Class Scientific
         '
         'Btn4
         '
+        Me.Btn4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn4.Location = New System.Drawing.Point(61, 417)
         Me.Btn4.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn4.Name = "Btn4"
@@ -197,6 +234,7 @@ Partial Class Scientific
         '
         'Btn5
         '
+        Me.Btn5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn5.Location = New System.Drawing.Point(121, 417)
         Me.Btn5.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn5.Name = "Btn5"
@@ -207,6 +245,7 @@ Partial Class Scientific
         '
         'Btn6
         '
+        Me.Btn6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn6.Location = New System.Drawing.Point(181, 417)
         Me.Btn6.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn6.Name = "Btn6"
@@ -217,6 +256,7 @@ Partial Class Scientific
         '
         'BtnMinus
         '
+        Me.BtnMinus.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMinus.Location = New System.Drawing.Point(241, 417)
         Me.BtnMinus.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMinus.Name = "BtnMinus"
@@ -227,6 +267,7 @@ Partial Class Scientific
         '
         'BtnPi
         '
+        Me.BtnPi.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPi.Location = New System.Drawing.Point(1, 374)
         Me.BtnPi.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnPi.Name = "BtnPi"
@@ -237,6 +278,7 @@ Partial Class Scientific
         '
         'Btn7
         '
+        Me.Btn7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn7.Location = New System.Drawing.Point(61, 374)
         Me.Btn7.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn7.Name = "Btn7"
@@ -247,6 +289,7 @@ Partial Class Scientific
         '
         'Btn8
         '
+        Me.Btn8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn8.Location = New System.Drawing.Point(121, 374)
         Me.Btn8.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn8.Name = "Btn8"
@@ -257,6 +300,7 @@ Partial Class Scientific
         '
         'Btn9
         '
+        Me.Btn9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn9.Location = New System.Drawing.Point(181, 374)
         Me.Btn9.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn9.Name = "Btn9"
@@ -267,6 +311,7 @@ Partial Class Scientific
         '
         'BtnMultiply
         '
+        Me.BtnMultiply.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnMultiply.Location = New System.Drawing.Point(241, 374)
         Me.BtnMultiply.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMultiply.Name = "BtnMultiply"
@@ -275,18 +320,20 @@ Partial Class Scientific
         Me.BtnMultiply.Text = "×"
         Me.BtnMultiply.UseVisualStyleBackColor = True
         '
-        'Button21
+        'Btn2nd
         '
-        Me.Button21.Location = New System.Drawing.Point(1, 331)
-        Me.Button21.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(60, 43)
-        Me.Button21.TabIndex = 20
-        Me.Button21.Text = "Button21"
-        Me.Button21.UseVisualStyleBackColor = True
+        Me.Btn2nd.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn2nd.Location = New System.Drawing.Point(1, 331)
+        Me.Btn2nd.Margin = New System.Windows.Forms.Padding(0)
+        Me.Btn2nd.Name = "Btn2nd"
+        Me.Btn2nd.Size = New System.Drawing.Size(60, 43)
+        Me.Btn2nd.TabIndex = 20
+        Me.Btn2nd.Text = "2nd"
+        Me.Btn2nd.UseVisualStyleBackColor = True
         '
         'BtnCE
         '
+        Me.BtnCE.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnCE.Location = New System.Drawing.Point(61, 331)
         Me.BtnCE.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnCE.Name = "BtnCE"
@@ -297,6 +344,7 @@ Partial Class Scientific
         '
         'BtnC
         '
+        Me.BtnC.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnC.Location = New System.Drawing.Point(121, 331)
         Me.BtnC.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnC.Name = "BtnC"
@@ -307,6 +355,7 @@ Partial Class Scientific
         '
         'BtnDel
         '
+        Me.BtnDel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDel.Location = New System.Drawing.Point(181, 331)
         Me.BtnDel.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnDel.Name = "BtnDel"
@@ -317,6 +366,7 @@ Partial Class Scientific
         '
         'BtnDiv
         '
+        Me.BtnDiv.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnDiv.Location = New System.Drawing.Point(241, 331)
         Me.BtnDiv.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnDiv.Name = "BtnDiv"
@@ -327,7 +377,7 @@ Partial Class Scientific
         '
         'BtnSqrRoot
         '
-        Me.BtnSqrRoot.Location = New System.Drawing.Point(1, 288)
+        Me.BtnSqrRoot.Location = New System.Drawing.Point(-1, 89)
         Me.BtnSqrRoot.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnSqrRoot.Name = "BtnSqrRoot"
         Me.BtnSqrRoot.Size = New System.Drawing.Size(60, 43)
@@ -337,7 +387,7 @@ Partial Class Scientific
         '
         'Btn10X
         '
-        Me.Btn10X.Location = New System.Drawing.Point(61, 288)
+        Me.Btn10X.Location = New System.Drawing.Point(59, 89)
         Me.Btn10X.Margin = New System.Windows.Forms.Padding(0)
         Me.Btn10X.Name = "Btn10X"
         Me.Btn10X.Size = New System.Drawing.Size(60, 43)
@@ -347,7 +397,7 @@ Partial Class Scientific
         '
         'BtnLog
         '
-        Me.BtnLog.Location = New System.Drawing.Point(121, 288)
+        Me.BtnLog.Location = New System.Drawing.Point(119, 89)
         Me.BtnLog.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnLog.Name = "BtnLog"
         Me.BtnLog.Size = New System.Drawing.Size(60, 43)
@@ -357,7 +407,8 @@ Partial Class Scientific
         '
         'BtnExp
         '
-        Me.BtnExp.Location = New System.Drawing.Point(181, 288)
+        Me.BtnExp.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnExp.Location = New System.Drawing.Point(179, 89)
         Me.BtnExp.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnExp.Name = "BtnExp"
         Me.BtnExp.Size = New System.Drawing.Size(60, 43)
@@ -367,7 +418,8 @@ Partial Class Scientific
         '
         'BtnMod
         '
-        Me.BtnMod.Location = New System.Drawing.Point(241, 288)
+        Me.BtnMod.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMod.Location = New System.Drawing.Point(239, 89)
         Me.BtnMod.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMod.Name = "BtnMod"
         Me.BtnMod.Size = New System.Drawing.Size(60, 43)
@@ -377,7 +429,8 @@ Partial Class Scientific
         '
         'BtnXSqr
         '
-        Me.BtnXSqr.Location = New System.Drawing.Point(1, 245)
+        Me.BtnXSqr.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnXSqr.Location = New System.Drawing.Point(-1, 46)
         Me.BtnXSqr.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnXSqr.Name = "BtnXSqr"
         Me.BtnXSqr.Size = New System.Drawing.Size(60, 43)
@@ -387,8 +440,8 @@ Partial Class Scientific
         '
         'BtnXY
         '
-        Me.BtnXY.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnXY.Location = New System.Drawing.Point(61, 245)
+        Me.BtnXY.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnXY.Location = New System.Drawing.Point(59, 46)
         Me.BtnXY.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnXY.Name = "BtnXY"
         Me.BtnXY.Size = New System.Drawing.Size(60, 43)
@@ -398,8 +451,8 @@ Partial Class Scientific
         '
         'BtnSin
         '
-        Me.BtnSin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.BtnSin.Location = New System.Drawing.Point(121, 245)
+        Me.BtnSin.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSin.Location = New System.Drawing.Point(119, 46)
         Me.BtnSin.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnSin.Name = "BtnSin"
         Me.BtnSin.Size = New System.Drawing.Size(60, 43)
@@ -409,7 +462,7 @@ Partial Class Scientific
         '
         'BtnCos
         '
-        Me.BtnCos.Location = New System.Drawing.Point(181, 245)
+        Me.BtnCos.Location = New System.Drawing.Point(179, 46)
         Me.BtnCos.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnCos.Name = "BtnCos"
         Me.BtnCos.Size = New System.Drawing.Size(60, 43)
@@ -419,7 +472,7 @@ Partial Class Scientific
         '
         'BtnTan
         '
-        Me.BtnTan.Location = New System.Drawing.Point(241, 245)
+        Me.BtnTan.Location = New System.Drawing.Point(239, 46)
         Me.BtnTan.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnTan.Name = "BtnTan"
         Me.BtnTan.Size = New System.Drawing.Size(60, 43)
@@ -429,7 +482,8 @@ Partial Class Scientific
         '
         'BtnMC
         '
-        Me.BtnMC.Location = New System.Drawing.Point(1, 202)
+        Me.BtnMC.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMC.Location = New System.Drawing.Point(2, 136)
         Me.BtnMC.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMC.Name = "BtnMC"
         Me.BtnMC.Size = New System.Drawing.Size(60, 43)
@@ -439,7 +493,8 @@ Partial Class Scientific
         '
         'BtnMR
         '
-        Me.BtnMR.Location = New System.Drawing.Point(61, 202)
+        Me.BtnMR.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMR.Location = New System.Drawing.Point(62, 136)
         Me.BtnMR.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMR.Name = "BtnMR"
         Me.BtnMR.Size = New System.Drawing.Size(60, 43)
@@ -449,7 +504,8 @@ Partial Class Scientific
         '
         'BtnMPlus
         '
-        Me.BtnMPlus.Location = New System.Drawing.Point(121, 202)
+        Me.BtnMPlus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMPlus.Location = New System.Drawing.Point(122, 136)
         Me.BtnMPlus.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMPlus.Name = "BtnMPlus"
         Me.BtnMPlus.Size = New System.Drawing.Size(60, 43)
@@ -459,7 +515,8 @@ Partial Class Scientific
         '
         'BtnMMinus
         '
-        Me.BtnMMinus.Location = New System.Drawing.Point(181, 202)
+        Me.BtnMMinus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMMinus.Location = New System.Drawing.Point(182, 136)
         Me.BtnMMinus.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMMinus.Name = "BtnMMinus"
         Me.BtnMMinus.Size = New System.Drawing.Size(60, 43)
@@ -469,7 +526,8 @@ Partial Class Scientific
         '
         'BtnMS
         '
-        Me.BtnMS.Location = New System.Drawing.Point(241, 202)
+        Me.BtnMS.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMS.Location = New System.Drawing.Point(242, 136)
         Me.BtnMS.Margin = New System.Windows.Forms.Padding(0)
         Me.BtnMS.Name = "BtnMS"
         Me.BtnMS.Size = New System.Drawing.Size(60, 43)
@@ -484,7 +542,7 @@ Partial Class Scientific
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(302, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(300, 24)
         Me.MenuStrip1.TabIndex = 40
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -534,7 +592,7 @@ Partial Class Scientific
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(12, 119)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 62)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(278, 40)
         Me.TextBox1.TabIndex = 41
@@ -542,16 +600,271 @@ Partial Class Scientific
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(157, 63)
+        Me.TextBox2.Location = New System.Drawing.Point(190, 36)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 42
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.BtnTanh)
+        Me.GroupBox1.Controls.Add(Me.BtnCosh)
+        Me.GroupBox1.Controls.Add(Me.BtnSinh)
+        Me.GroupBox1.Controls.Add(Me.BtnSqrRoot)
+        Me.GroupBox1.Controls.Add(Me.Btn10X)
+        Me.GroupBox1.Controls.Add(Me.BtnLog)
+        Me.GroupBox1.Controls.Add(Me.BtnExp)
+        Me.GroupBox1.Controls.Add(Me.BtnMod)
+        Me.GroupBox1.Controls.Add(Me.BtnXSqr)
+        Me.GroupBox1.Controls.Add(Me.BtnXY)
+        Me.GroupBox1.Controls.Add(Me.BtnSin)
+        Me.GroupBox1.Controls.Add(Me.BtnCos)
+        Me.GroupBox1.Controls.Add(Me.BtnTan)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(2, 196)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(304, 132)
+        Me.GroupBox1.TabIndex = 44
+        Me.GroupBox1.TabStop = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.BtnInverseTanh)
+        Me.GroupBox2.Controls.Add(Me.BtnInverseCosh)
+        Me.GroupBox2.Controls.Add(Me.BtnInverseSinh)
+        Me.GroupBox2.Controls.Add(Me.BtnOneOver)
+        Me.GroupBox2.Controls.Add(Me.BtnE)
+        Me.GroupBox2.Controls.Add(Me.BtnLn)
+        Me.GroupBox2.Controls.Add(Me.BtnDMS)
+        Me.GroupBox2.Controls.Add(Me.BtnDeg)
+        Me.GroupBox2.Controls.Add(Me.BtnXCube)
+        Me.GroupBox2.Controls.Add(Me.BtnRoot)
+        Me.GroupBox2.Controls.Add(Me.BtnInverseSin)
+        Me.GroupBox2.Controls.Add(Me.BtnInverseCos)
+        Me.GroupBox2.Controls.Add(Me.BtnInverseTan)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(0, 201)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(322, 129)
+        Me.GroupBox2.TabIndex = 45
+        Me.GroupBox2.TabStop = False
+        '
+        'BtnOneOver
+        '
+        Me.BtnOneOver.Location = New System.Drawing.Point(0, 85)
+        Me.BtnOneOver.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnOneOver.Name = "BtnOneOver"
+        Me.BtnOneOver.Size = New System.Drawing.Size(60, 43)
+        Me.BtnOneOver.TabIndex = 25
+        Me.BtnOneOver.Text = "⅟x"
+        Me.BtnOneOver.UseVisualStyleBackColor = True
+        '
+        'BtnE
+        '
+        Me.BtnE.Location = New System.Drawing.Point(60, 85)
+        Me.BtnE.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnE.Name = "BtnE"
+        Me.BtnE.Size = New System.Drawing.Size(60, 43)
+        Me.BtnE.TabIndex = 26
+        Me.BtnE.Text = "e˟"
+        Me.BtnE.UseVisualStyleBackColor = True
+        '
+        'BtnLn
+        '
+        Me.BtnLn.Location = New System.Drawing.Point(120, 85)
+        Me.BtnLn.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnLn.Name = "BtnLn"
+        Me.BtnLn.Size = New System.Drawing.Size(60, 43)
+        Me.BtnLn.TabIndex = 27
+        Me.BtnLn.Text = "ln"
+        Me.BtnLn.UseVisualStyleBackColor = True
+        '
+        'BtnDMS
+        '
+        Me.BtnDMS.Location = New System.Drawing.Point(180, 85)
+        Me.BtnDMS.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnDMS.Name = "BtnDMS"
+        Me.BtnDMS.Size = New System.Drawing.Size(60, 43)
+        Me.BtnDMS.TabIndex = 28
+        Me.BtnDMS.Text = "dms"
+        Me.BtnDMS.UseVisualStyleBackColor = True
+        '
+        'BtnDeg
+        '
+        Me.BtnDeg.Location = New System.Drawing.Point(240, 85)
+        Me.BtnDeg.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnDeg.Name = "BtnDeg"
+        Me.BtnDeg.Size = New System.Drawing.Size(60, 43)
+        Me.BtnDeg.TabIndex = 29
+        Me.BtnDeg.Text = "deg"
+        Me.BtnDeg.UseVisualStyleBackColor = True
+        '
+        'BtnXCube
+        '
+        Me.BtnXCube.Location = New System.Drawing.Point(0, 42)
+        Me.BtnXCube.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnXCube.Name = "BtnXCube"
+        Me.BtnXCube.Size = New System.Drawing.Size(60, 43)
+        Me.BtnXCube.TabIndex = 30
+        Me.BtnXCube.Text = "x³"
+        Me.BtnXCube.UseVisualStyleBackColor = True
+        '
+        'BtnRoot
+        '
+        Me.BtnRoot.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnRoot.Location = New System.Drawing.Point(60, 42)
+        Me.BtnRoot.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnRoot.Name = "BtnRoot"
+        Me.BtnRoot.Size = New System.Drawing.Size(60, 43)
+        Me.BtnRoot.TabIndex = 31
+        Me.BtnRoot.Text = "ʸ√ x"
+        Me.BtnRoot.UseVisualStyleBackColor = True
+        '
+        'BtnInverseSin
+        '
+        Me.BtnInverseSin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnInverseSin.Location = New System.Drawing.Point(120, 42)
+        Me.BtnInverseSin.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseSin.Name = "BtnInverseSin"
+        Me.BtnInverseSin.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseSin.TabIndex = 32
+        Me.BtnInverseSin.Text = "sin⁻¹"
+        Me.BtnInverseSin.UseVisualStyleBackColor = True
+        '
+        'BtnInverseCos
+        '
+        Me.BtnInverseCos.Location = New System.Drawing.Point(180, 42)
+        Me.BtnInverseCos.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseCos.Name = "BtnInverseCos"
+        Me.BtnInverseCos.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseCos.TabIndex = 33
+        Me.BtnInverseCos.Text = "cos⁻¹"
+        Me.BtnInverseCos.UseVisualStyleBackColor = True
+        '
+        'BtnInverseTan
+        '
+        Me.BtnInverseTan.Location = New System.Drawing.Point(240, 42)
+        Me.BtnInverseTan.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseTan.Name = "BtnInverseTan"
+        Me.BtnInverseTan.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseTan.TabIndex = 34
+        Me.BtnInverseTan.Text = "tan⁻¹"
+        Me.BtnInverseTan.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(6, 34)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(45, 17)
+        Me.RadioButton2.TabIndex = 46
+        Me.RadioButton2.Text = "Deg"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = True
+        Me.RadioButton1.Location = New System.Drawing.Point(6, 11)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(45, 17)
+        Me.RadioButton1.TabIndex = 47
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Rad"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(57, 11)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(48, 17)
+        Me.RadioButton3.TabIndex = 48
+        Me.RadioButton3.Text = "Grad"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.RadioButton1)
+        Me.GroupBox3.Controls.Add(Me.RadioButton3)
+        Me.GroupBox3.Controls.Add(Me.RadioButton2)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(2, 182)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(118, 57)
+        Me.GroupBox3.TabIndex = 49
+        Me.GroupBox3.TabStop = False
+        '
+        'BtnSinh
+        '
+        Me.BtnSinh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSinh.Location = New System.Drawing.Point(119, 3)
+        Me.BtnSinh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnSinh.Name = "BtnSinh"
+        Me.BtnSinh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnSinh.TabIndex = 35
+        Me.BtnSinh.Text = "sinh"
+        Me.BtnSinh.UseVisualStyleBackColor = True
+        '
+        'BtnCosh
+        '
+        Me.BtnCosh.Location = New System.Drawing.Point(179, 3)
+        Me.BtnCosh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnCosh.Name = "BtnCosh"
+        Me.BtnCosh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnCosh.TabIndex = 36
+        Me.BtnCosh.Text = "cosh"
+        Me.BtnCosh.UseVisualStyleBackColor = True
+        '
+        'BtnTanh
+        '
+        Me.BtnTanh.Location = New System.Drawing.Point(239, 3)
+        Me.BtnTanh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnTanh.Name = "BtnTanh"
+        Me.BtnTanh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnTanh.TabIndex = 50
+        Me.BtnTanh.Text = "tanh"
+        Me.BtnTanh.UseVisualStyleBackColor = True
+        '
+        'BtnInverseSinh
+        '
+        Me.BtnInverseSinh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnInverseSinh.Location = New System.Drawing.Point(120, 0)
+        Me.BtnInverseSinh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseSinh.Name = "BtnInverseSinh"
+        Me.BtnInverseSinh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseSinh.TabIndex = 35
+        Me.BtnInverseSinh.Text = "sinh⁻¹"
+        Me.BtnInverseSinh.UseVisualStyleBackColor = True
+        '
+        'BtnInverseCosh
+        '
+        Me.BtnInverseCosh.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnInverseCosh.Location = New System.Drawing.Point(180, 0)
+        Me.BtnInverseCosh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseCosh.Name = "BtnInverseCosh"
+        Me.BtnInverseCosh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseCosh.TabIndex = 36
+        Me.BtnInverseCosh.Text = "cosh⁻¹"
+        Me.BtnInverseCosh.UseVisualStyleBackColor = True
+        '
+        'BtnInverseTanh
+        '
+        Me.BtnInverseTanh.Location = New System.Drawing.Point(240, 1)
+        Me.BtnInverseTanh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BtnInverseTanh.Name = "BtnInverseTanh"
+        Me.BtnInverseTanh.Size = New System.Drawing.Size(60, 43)
+        Me.BtnInverseTanh.TabIndex = 37
+        Me.BtnInverseTanh.Text = "tanh⁻¹"
+        Me.BtnInverseTanh.UseVisualStyleBackColor = True
         '
         'Scientific
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(302, 547)
+        Me.ClientSize = New System.Drawing.Size(300, 547)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -560,21 +873,12 @@ Partial Class Scientific
         Me.Controls.Add(Me.BtnMPlus)
         Me.Controls.Add(Me.BtnMR)
         Me.Controls.Add(Me.BtnMC)
-        Me.Controls.Add(Me.BtnTan)
-        Me.Controls.Add(Me.BtnCos)
-        Me.Controls.Add(Me.BtnSin)
-        Me.Controls.Add(Me.BtnXY)
-        Me.Controls.Add(Me.BtnXSqr)
-        Me.Controls.Add(Me.BtnMod)
-        Me.Controls.Add(Me.BtnExp)
-        Me.Controls.Add(Me.BtnLog)
-        Me.Controls.Add(Me.Btn10X)
-        Me.Controls.Add(Me.BtnSqrRoot)
         Me.Controls.Add(Me.BtnDiv)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.BtnDel)
         Me.Controls.Add(Me.BtnC)
         Me.Controls.Add(Me.BtnCE)
-        Me.Controls.Add(Me.Button21)
+        Me.Controls.Add(Me.Btn2nd)
         Me.Controls.Add(Me.BtnMultiply)
         Me.Controls.Add(Me.Btn9)
         Me.Controls.Add(Me.Btn8)
@@ -601,6 +905,10 @@ Partial Class Scientific
         Me.Text = "Calculator"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -626,7 +934,7 @@ Partial Class Scientific
     Friend WithEvents Btn8 As Button
     Friend WithEvents Btn9 As Button
     Friend WithEvents BtnMultiply As Button
-    Friend WithEvents Button21 As Button
+    Friend WithEvents Btn2nd As Button
     Friend WithEvents BtnCE As Button
     Friend WithEvents BtnC As Button
     Friend WithEvents BtnDel As Button
@@ -656,4 +964,26 @@ Partial Class Scientific
     Friend WithEvents ConverterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents BtnOneOver As Button
+    Friend WithEvents BtnE As Button
+    Friend WithEvents BtnLn As Button
+    Friend WithEvents BtnDMS As Button
+    Friend WithEvents BtnDeg As Button
+    Friend WithEvents BtnXCube As Button
+    Friend WithEvents BtnRoot As Button
+    Friend WithEvents BtnInverseSin As Button
+    Friend WithEvents BtnInverseCos As Button
+    Friend WithEvents BtnInverseTan As Button
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents BtnTanh As Button
+    Friend WithEvents BtnCosh As Button
+    Friend WithEvents BtnSinh As Button
+    Friend WithEvents BtnInverseTanh As Button
+    Friend WithEvents BtnInverseCosh As Button
+    Friend WithEvents BtnInverseSinh As Button
 End Class
