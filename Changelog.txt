@@ -3,3 +3,7 @@
 Kevin - -added Degree, Radian, Gradian and added the hyperbolic trig buttons on the scientific calc. 
 	-added continuous operations. For example 1+1+1x2 = 6 wihtout hitting the equals.
 	-Parenthesis is the last thing to do
+
+3/8/17
+K - 	Parenthesis or any equation should work
+	-Debugged some stuff
