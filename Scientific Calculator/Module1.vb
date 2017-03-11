@@ -16,7 +16,7 @@
             Form1.TextBox2.Text = Form1.TextBox1.Text
         End If
         If Form1.TextBox1.Text = "0" Or Form1.contNum = True Or Form1.lastWasEqual = True Then
-            Form1.TextBox1.Text = Butt.Text
+            Form1.TextBox1.Text += Butt.Text
             If Form1.TextBox2.Text = "0" Then
                 Form1.TextBox2.Text = Butt.Text
             Else
@@ -40,7 +40,7 @@
         End If
         If Scientific.TextBox1.Text = "0" Or Scientific.contNum = True Or Scientific.lastWasEqual2 = True Then
             If Scientific.bracket = False Then
-                Scientific.TextBox1.Text = Butt.Text
+                Scientific.TextBox1.Text += Butt.Text
             End If
             If Scientific.TextBox2.Text = "0" Then
                 Scientific.TextBox2.Text = Butt.Text

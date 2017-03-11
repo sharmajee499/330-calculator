@@ -70,6 +70,7 @@
             Arithematic(BtnDiv)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Calculate()
@@ -95,6 +96,7 @@
             Arithematic(BtnMultiply)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Value2 = Val(TextBox1.Text)
@@ -121,6 +123,7 @@
             Arithematic(BtnMinus)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Value2 = Val(TextBox1.Text)
@@ -147,9 +150,11 @@
             Arithematic(BtnPlus)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Value2 = Val(TextBox1.Text)
+
                 Calculate()
                 Arithematic(BtnPlus)
                 Value3 = TextBox1.Text
@@ -174,6 +179,7 @@
         ShowHistory()
         lastWasEqual = True
         Value2 = 0
+        contOper = 0
     End Sub
 
     Private Sub BtnDot_Click(sender As Object, e As EventArgs) Handles BtnDot.Click

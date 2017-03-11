@@ -91,6 +91,7 @@
             Arithematic2(BtnDiv)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Value2 = Val(TextBox1.Text)
@@ -117,6 +118,7 @@
             Arithematic2(BtnMultiply)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Value2 = Val(TextBox1.Text)
@@ -143,6 +145,7 @@
             Arithematic2(BtnMinus)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Value2 = Val(TextBox1.Text)
@@ -169,6 +172,7 @@
             Arithematic2(BtnPlus)
             contOper = 1
             contNum = True
+            halt = True
         ElseIf contOper = 1 Then
             If halt = False Then
                 Value2 = Val(TextBox1.Text)
@@ -293,7 +297,7 @@
     Private Sub Btn10X_Click(sender As Object, e As EventArgs) Handles Btn10X.Click
         TextBox1.Text = 10 ^ TextBox1.Text
         lastWasEqual2 = True
-        old = true
+        old = True
     End Sub
 
     Private Sub BtnLog_Click(sender As Object, e As EventArgs) Handles BtnLog.Click
