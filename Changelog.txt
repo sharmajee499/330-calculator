@@ -9,3 +9,4 @@ K - 	Parenthesis or any equation should work
 	-Debugged some stuff
 
 3/11/17----------Ryan -- Found a bug related to countOper not being reset after equals was pressed, as well as numbers not getting attached to a previous answer as it should
+3/14/17----------Ryan -- Started work on Programmer

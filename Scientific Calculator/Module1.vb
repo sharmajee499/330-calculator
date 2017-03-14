@@ -4,6 +4,7 @@
 
 
     Public lastWasArith2 = False
+    Public lastWasArith3 = False
 
     Sub ShowValue(ByVal Butt As Button)
         If lastWasArith = True Then
@@ -56,6 +57,30 @@
         End If
 
     End Sub
+    Sub ShowValue3(ByVal Butt As Button) 'Programmer
+        If lastWasArith3 = True Then
+            Programmer.TextBox1.Text = ""
+            Scientific.TextBox1.Text = ""
+            Form1.TextBox1.Text = ""
+            lastWasArith3 = False
+        End If
+        If Programmer.lastWasEqual3 Then
+            Programmer.TextBox2.Text = ""
+            Programmer.TextBox2.Text = Programmer.TextBox1.Text
+        End If
+        If Programmer.TextBox1.Text = "0" Or Programmer.contNum = True Or Programmer.lastWasEqual3 = True Then
+            Programmer.TextBox1.Text += Butt.Text
+            If Programmer.TextBox2.Text = "0" Then
+                Programmer.TextBox2.Text = Butt.Text
+            Else
+                Programmer.TextBox2.Text += Butt.Text
+            End If
+            Programmer.contNum = False
+        Else
+            Programmer.TextBox1.Text = (Programmer.TextBox1.Text & Butt.Text)
+            Programmer.TextBox2.Text = (Programmer.TextBox2.Text & Butt.Text)
+        End If
+    End Sub
 
     Sub Arithematic(ByVal butt As Button)
         If Form1.lastWasEqual Then
@@ -84,6 +109,21 @@
         Scientific.TextBox2.Text += Scientific.Oper
 
         lastWasArith2 = True
+    End Sub
+
+    Sub Arithematic3(ByVal butt As Button) 'Programmer
+        If Programmer.lastWasEqual3 Then
+            Programmer.TextBox2.Text = ""
+            Programmer.TextBox2.Text = Programmer.TextBox1.Text
+        End If
+        Programmer.lastWasEqual3 = False
+        Programmer.Value1 = Val(Programmer.TextBox1.Text)
+        Programmer.Oper = butt.Text
+        Programmer.TextBox1.Text = ""
+        Programmer.TextBox1.Text = Programmer.Value1
+        Programmer.TextBox2.Text += Programmer.Oper
+
+        lastWasArith3 = True
     End Sub
 
     Sub Calculate()
@@ -152,6 +192,31 @@
             End Select
         End If
     End Sub
+    Sub Calculate3()
+        If Programmer.contOper = 2 Then
+            Select Case Programmer.Oper
+                Case "+"
+                    Programmer.TextBox1.Text = Programmer.Value3 + Val(Programmer.TextBox1.Text)
+                Case "-"
+                    Programmer.TextBox1.Text = Programmer.Value3 - Val(Programmer.TextBox1.Text)
+                Case "×"
+                    Programmer.TextBox1.Text = Programmer.Value3 * Val(Programmer.TextBox1.Text)
+                Case "÷"
+                    Programmer.TextBox1.Text = Programmer.Value3 / Val(Programmer.TextBox1.Text)
+            End Select
+        Else
+            Select Case Programmer.Oper
+                Case "+"
+                    Programmer.TextBox1.Text = Programmer.Value1 + Val(Programmer.TextBox1.Text)
+                Case "-"
+                    Programmer.TextBox1.Text = Programmer.Value1 - Val(Programmer.TextBox1.Text)
+                Case "×"
+                    Programmer.TextBox1.Text = Programmer.Value1 * Val(Programmer.TextBox1.Text)
+                Case "÷"
+                    Programmer.TextBox1.Text = Programmer.Value1 / Val(Programmer.TextBox1.Text)
+            End Select
+        End If
+    End Sub
     Sub ShowHistory()
         Form1.History.Text =
             Form1.History.Text &
@@ -192,6 +257,12 @@
         Dim format As String = FormatExpression(source)
         Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
         Form1.TextBox1.Text = Evaluate(rpn)
+    End Sub
+    Sub getValue3() 'Programmer
+        Dim source As String = Programmer.TextBox2.Text
+        Dim format As String = FormatExpression(source)
+        Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
+        Programmer.TextBox1.Text = Evaluate(rpn)
     End Sub
     Private Function FormatExpression(ByVal expression As String) As String
         Dim format As String = expression.Replace(" ", String.Empty)
