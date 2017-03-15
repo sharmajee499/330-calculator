@@ -174,12 +174,17 @@
     End Sub
 
     Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
-        Value2 = Val(TextBox1.Text)
-        getValue2()
-        ShowHistory()
-        lastWasEqual = True
-        Value2 = 0
-        contOper = 0
+        Try
+            Value2 = Val(TextBox1.Text)
+            getValue2()
+            ShowHistory()
+            lastWasEqual = True
+            Value2 = 0
+            contOper = 0
+        Catch ex As Exception
+            MsgBox("Invalid Operation")
+        End Try
+
     End Sub
 
     Private Sub BtnDot_Click(sender As Object, e As EventArgs) Handles BtnDot.Click

@@ -195,20 +195,24 @@
     End Sub
 
     Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
-        If old = False Then
-            getValue()
-        Else
-            Calculate2()
-            old = False
-        End If
-        ShowHistory2()
-        Value1 = 0
-        Value2 = 0
-        Value3 = TextBox1.Text
-        contOper = 0
-        contNum = False
-        halt = True
-        lastWasEqual2 = True
+        Try
+            If old = False Then
+                getValue()
+            Else
+                Calculate2()
+                old = False
+            End If
+            ShowHistory2()
+            Value1 = 0
+            Value2 = 0
+            Value3 = TextBox1.Text
+            contOper = 0
+            contNum = False
+            halt = True
+            lastWasEqual2 = True
+        Catch ex As Exception
+            MsgBox("Invalid Operation")
+        End Try
     End Sub
 
     Private Sub BtnDel_Click(sender As Object, e As EventArgs) Handles BtnDel.Click

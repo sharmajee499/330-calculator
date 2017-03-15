@@ -164,12 +164,16 @@
         End If
     End Sub
     Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
-        Value2 = Val(TextBox1.Text)
-        getValue3()
-        ShowHistory()
-        lastWasEqual3 = True
-        Value2 = 0
-        contOper = 0
+        Try
+            Value2 = Val(TextBox1.Text)
+            getValue3()
+            ShowHistory()
+            lastWasEqual3 = True
+            Value2 = 0
+            contOper = 0
+        Catch ex As Exception
+            MsgBox("Invalid Operation")
+        End Try
     End Sub
     Private Sub StandardToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles StandardToolStripMenuItem.Click
         Form1.Show()
