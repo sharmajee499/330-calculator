@@ -11,3 +11,4 @@ K - 	Parenthesis or any equation should work
 3/11/17----------Ryan -- Found a bug related to countOper not being reset after equals was pressed, as well as numbers not getting attached to a previous answer as it should
 3/14/17----------Ryan -- Started work on Programmer
 3/15/17----------Ryan -- Added Try/Catch statements to the equals button to catch exceptions for invalid operations
+3/26/17----------Ryan -- Added arithmetic with binary to programmer

@@ -5,6 +5,9 @@
     Public halt As Boolean = False
     Public contNum As Boolean = False
     Public lastWasEqual3 = False
+    Public format As String = "dec" 'decimal
+    Public BinValue3 As Integer = 0 'Can't convert to binary with a double
+    Public DecString As String 'Store equations in decimal form
 
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -166,7 +169,23 @@
     Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
         Try
             Value2 = Val(TextBox1.Text)
+            If format.Equals("bin") Then
+                Value1 = Convert.ToInt32(Value1, 2)
+                Value2 = Convert.ToInt32(Value2, 2)
+            End If
+            DecString = Value1 & Oper & Value2
+            'MsgBox(DecString)
             getValue3()
+            'MsgBox(Value1)
+            'MsgBox(Value2)
+            'MsgBox(Value3)
+            If format.Equals("bin") Then
+                BinValue3 = Int(TextBox1.Text)
+                BinValue3 = Convert.ToString(BinValue3, 2)
+                BinValue3 = Convert.ToInt32(BinValue3)
+                TextBox1.Text = BinValue3
+            End If
+            'MsgBox(BinValue3)
             ShowHistory()
             lastWasEqual3 = True
             Value2 = 0
@@ -199,6 +218,7 @@
 
     End Sub
     Private Sub Binary_Click(sender As Object, e As EventArgs) Handles Binary.Click
+        format = "bin" 'binary
         Button2.Enabled = False
         Button3.Enabled = False
         Button4.Enabled = False

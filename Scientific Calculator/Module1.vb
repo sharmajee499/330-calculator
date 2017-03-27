@@ -259,7 +259,7 @@
         Form1.TextBox1.Text = Evaluate(rpn)
     End Sub
     Sub getValue3() 'Programmer
-        Dim source As String = Programmer.TextBox2.Text
+        Dim source As String = Programmer.DecString
         Dim format As String = FormatExpression(source)
         Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
         Programmer.TextBox1.Text = Evaluate(rpn)
