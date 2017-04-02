@@ -52,6 +52,14 @@ Partial Class Programmer
         Me.Octal = New System.Windows.Forms.Button()
         Me.Dec = New System.Windows.Forms.Button()
         Me.Hex = New System.Windows.Forms.Button()
+        Me.buttA = New System.Windows.Forms.Button()
+        Me.buttB = New System.Windows.Forms.Button()
+        Me.buttC = New System.Windows.Forms.Button()
+        Me.buttD = New System.Windows.Forms.Button()
+        Me.buttE = New System.Windows.Forms.Button()
+        Me.buttF = New System.Windows.Forms.Button()
+        Me.CE = New System.Windows.Forms.Button()
+        Me.clear = New System.Windows.Forms.Button()
         Me.MenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -300,11 +308,97 @@ Partial Class Programmer
         Me.Hex.Text = "Hex"
         Me.Hex.UseVisualStyleBackColor = True
         '
+        'buttA
+        '
+        Me.buttA.Enabled = False
+        Me.buttA.Location = New System.Drawing.Point(12, 261)
+        Me.buttA.Name = "buttA"
+        Me.buttA.Size = New System.Drawing.Size(37, 23)
+        Me.buttA.TabIndex = 23
+        Me.buttA.Text = "A"
+        Me.buttA.UseVisualStyleBackColor = True
+        '
+        'buttB
+        '
+        Me.buttB.Enabled = False
+        Me.buttB.Location = New System.Drawing.Point(51, 261)
+        Me.buttB.Name = "buttB"
+        Me.buttB.Size = New System.Drawing.Size(38, 23)
+        Me.buttB.TabIndex = 24
+        Me.buttB.Text = "B"
+        Me.buttB.UseVisualStyleBackColor = True
+        '
+        'buttC
+        '
+        Me.buttC.Enabled = False
+        Me.buttC.Location = New System.Drawing.Point(12, 291)
+        Me.buttC.Name = "buttC"
+        Me.buttC.Size = New System.Drawing.Size(37, 21)
+        Me.buttC.TabIndex = 25
+        Me.buttC.Text = "C"
+        Me.buttC.UseVisualStyleBackColor = True
+        '
+        'buttD
+        '
+        Me.buttD.Enabled = False
+        Me.buttD.Location = New System.Drawing.Point(51, 291)
+        Me.buttD.Name = "buttD"
+        Me.buttD.Size = New System.Drawing.Size(38, 23)
+        Me.buttD.TabIndex = 26
+        Me.buttD.Text = "D"
+        Me.buttD.UseVisualStyleBackColor = True
+        '
+        'buttE
+        '
+        Me.buttE.Enabled = False
+        Me.buttE.Location = New System.Drawing.Point(12, 318)
+        Me.buttE.Name = "buttE"
+        Me.buttE.Size = New System.Drawing.Size(37, 23)
+        Me.buttE.TabIndex = 27
+        Me.buttE.Text = "E"
+        Me.buttE.UseVisualStyleBackColor = True
+        '
+        'buttF
+        '
+        Me.buttF.Enabled = False
+        Me.buttF.Location = New System.Drawing.Point(51, 318)
+        Me.buttF.Name = "buttF"
+        Me.buttF.Size = New System.Drawing.Size(38, 23)
+        Me.buttF.TabIndex = 28
+        Me.buttF.Text = "F"
+        Me.buttF.UseVisualStyleBackColor = True
+        '
+        'CE
+        '
+        Me.CE.Location = New System.Drawing.Point(137, 223)
+        Me.CE.Name = "CE"
+        Me.CE.Size = New System.Drawing.Size(40, 23)
+        Me.CE.TabIndex = 29
+        Me.CE.Text = "CE"
+        Me.CE.UseVisualStyleBackColor = True
+        '
+        'clear
+        '
+        Me.clear.Location = New System.Drawing.Point(181, 223)
+        Me.clear.Name = "clear"
+        Me.clear.Size = New System.Drawing.Size(45, 23)
+        Me.clear.TabIndex = 30
+        Me.clear.Text = "C"
+        Me.clear.UseVisualStyleBackColor = True
+        '
         'Programmer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(268, 399)
+        Me.Controls.Add(Me.clear)
+        Me.Controls.Add(Me.CE)
+        Me.Controls.Add(Me.buttF)
+        Me.Controls.Add(Me.buttE)
+        Me.Controls.Add(Me.buttD)
+        Me.Controls.Add(Me.buttC)
+        Me.Controls.Add(Me.buttB)
+        Me.Controls.Add(Me.buttA)
         Me.Controls.Add(Me.Hex)
         Me.Controls.Add(Me.Dec)
         Me.Controls.Add(Me.Octal)
@@ -370,4 +464,12 @@ Partial Class Programmer
     Friend WithEvents Octal As Button
     Friend WithEvents Dec As Button
     Friend WithEvents Hex As Button
+    Friend WithEvents buttA As Button
+    Friend WithEvents buttB As Button
+    Friend WithEvents buttC As Button
+    Friend WithEvents buttD As Button
+    Friend WithEvents buttE As Button
+    Friend WithEvents buttF As Button
+    Friend WithEvents CE As Button
+    Friend WithEvents clear As Button
 End Class

@@ -117,11 +117,19 @@
             Programmer.TextBox2.Text = Programmer.TextBox1.Text
         End If
         Programmer.lastWasEqual3 = False
-        Programmer.Value1 = Val(Programmer.TextBox1.Text)
-        Programmer.Oper = butt.Text
-        Programmer.TextBox1.Text = ""
-        Programmer.TextBox1.Text = Programmer.Value1
-        Programmer.TextBox2.Text += Programmer.Oper
+        If Not Programmer.format.Equals("hex") Then
+            Programmer.Value1 = Val(Programmer.TextBox1.Text)
+            Programmer.Oper = butt.Text
+            Programmer.TextBox1.Text = ""
+            Programmer.TextBox1.Text = Programmer.Value1
+            Programmer.TextBox2.Text += Programmer.Oper
+        Else
+            Programmer.HexVal1 = Programmer.TextBox1.Text
+            Programmer.Oper = butt.Text
+            Programmer.TextBox1.Text = ""
+            Programmer.TextBox1.Text = Programmer.HexVal1
+            Programmer.TextBox2.Text += Programmer.Oper
+        End If
 
         lastWasArith3 = True
     End Sub

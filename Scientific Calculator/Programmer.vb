@@ -6,8 +6,10 @@
     Public contNum As Boolean = False
     Public lastWasEqual3 = False
     Public format As String = "dec" 'decimal
-    Public BinValue3 As Integer = 0 'Can't convert to binary with a double
+    Public BinValue3 As Integer = 0 'Can't convert to binary with a double. Same for others, 
+    'I just don't want to mess with the name since it works
     Public DecString As String 'Store equations in decimal form
+    Public HexVal1, HexVal2, HexVal3 As String 'For storing hex values
 
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -57,6 +59,30 @@
 
     Private Sub Btn9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         ShowValue3(Button9)
+        halt = False
+    End Sub
+    Private Sub BtnA_Click(sender As Object, e As EventArgs) Handles buttA.Click
+        ShowValue3(buttA)
+        halt = False
+    End Sub
+    Private Sub BtnB_Click(sender As Object, e As EventArgs) Handles buttB.Click
+        ShowValue3(buttB)
+        halt = False
+    End Sub
+    Private Sub BtnC_Click(sender As Object, e As EventArgs) Handles buttC.Click
+        ShowValue3(buttC)
+        halt = False
+    End Sub
+    Private Sub BtnD_Click(sender As Object, e As EventArgs) Handles buttD.Click
+        ShowValue3(buttD)
+        halt = False
+    End Sub
+    Private Sub BtnE_Click(sender As Object, e As EventArgs) Handles buttE.Click
+        ShowValue3(buttE)
+        halt = False
+    End Sub
+    Private Sub BtnF_Click(sender As Object, e As EventArgs) Handles buttF.Click
+        ShowValue3(buttF)
         halt = False
     End Sub
     Private Sub BtnDiv_Click(sender As Object, e As EventArgs) Handles BtnDiv.Click
@@ -168,12 +194,31 @@
     End Sub
     Private Sub BtnEqual_Click(sender As Object, e As EventArgs) Handles BtnEqual.Click
         Try
-            Value2 = Val(TextBox1.Text)
+            If format.Equals("hex") Then
+                HexVal2 = TextBox1.Text
+            Else
+                Value2 = Val(TextBox1.Text)
+            End If
+
             If format.Equals("bin") Then
                 Value1 = Convert.ToInt32(Value1, 2)
                 Value2 = Convert.ToInt32(Value2, 2)
+            ElseIf format.Equals("oct") Then
+                Value1 = Convert.ToInt32(Value1, 8)
+                Value2 = Convert.ToInt32(Value2, 8)
+            ElseIf format.Equals("hex") Then
+                'MsgBox(HexVal1)
+                HexVal1 = Convert.ToInt32(HexVal1, 16)
+                'MsgBox(HexVal1)
+                HexVal2 = Convert.ToInt32(HexVal2, 16)
             End If
-            DecString = Value1 & Oper & Value2
+
+            If Not format.Equals("hex") Then
+                DecString = Value1 & Oper & Value2
+            Else
+                DecString = HexVal1 & Oper & HexVal2
+            End If
+
             'MsgBox(DecString)
             getValue3()
             'MsgBox(Value1)
@@ -184,6 +229,20 @@
                 BinValue3 = Convert.ToString(BinValue3, 2)
                 BinValue3 = Convert.ToInt32(BinValue3)
                 TextBox1.Text = BinValue3
+            End If
+            If format.Equals("oct") Then
+                BinValue3 = Int(TextBox1.Text)
+                BinValue3 = Convert.ToString(BinValue3, 8)
+                BinValue3 = Convert.ToInt32(BinValue3)
+                TextBox1.Text = BinValue3
+            End If
+            If format.Equals("hex") Then
+                BinValue3 = Int(TextBox1.Text)
+                'MsgBox(TextBox1.Text)
+                HexVal3 = BinValue3.ToString("X")
+                'MsgBox(HexVal3)
+                'BinValue3 = Convert.ToInt32(BinValue3)
+                TextBox1.Text = HexVal3
             End If
             'MsgBox(BinValue3)
             ShowHistory()
@@ -209,13 +268,92 @@
     End Sub
 
     Private Sub Decimal_Click(sender As Object, e As EventArgs) Handles Dec.Click
-
+        format = "dec" 'decimal
+        Button2.Enabled = True
+        Button3.Enabled = True
+        Button4.Enabled = True
+        Button5.Enabled = True
+        Button6.Enabled = True
+        Button7.Enabled = True
+        Button8.Enabled = True
+        Button9.Enabled = True
+        buttA.Enabled = False
+        buttB.Enabled = False
+        buttC.Enabled = False
+        buttD.Enabled = False
+        buttE.Enabled = False
+        buttF.Enabled = False
     End Sub
     Private Sub Octal_Click(sender As Object, e As EventArgs) Handles Octal.Click
-
+        format = "oct" 'octal
+        Button2.Enabled = True
+        Button3.Enabled = True
+        Button4.Enabled = True
+        Button5.Enabled = True
+        Button6.Enabled = True
+        Button7.Enabled = True
+        Button8.Enabled = False
+        Button9.Enabled = False
+        buttA.Enabled = False
+        buttB.Enabled = False
+        buttC.Enabled = False
+        buttD.Enabled = False
+        buttE.Enabled = False
+        buttF.Enabled = False
     End Sub
-    Private Sub Hex_Click(sender As Object, e As EventArgs) Handles Hex.Click
 
+    Private Sub C_Click(sender As Object, e As EventArgs) Handles clear.Click
+        TextBox1.Text = 0
+        TextBox2.Text = 0
+        contOper = 0
+        Value1 = 0
+        Value2 = 0
+        Value3 = 0
+        HexVal1 = 0
+        HexVal2 = 0
+        HexVal3 = 0
+        BinValue3 = 0
+        format = "dec"
+        lastWasEqual3 = False
+        halt = False
+        contNum = False
+        DecString = ""
+    End Sub
+
+    Private Sub CE_Click(sender As Object, e As EventArgs) Handles CE.Click
+        TextBox1.Text = 0
+        TextBox2.Text = 0
+        contOper = 0
+        Value1 = 0
+        Value2 = 0
+        Value3 = 0
+        HexVal1 = 0
+        HexVal2 = 0
+        HexVal3 = 0
+        BinValue3 = 0
+        format = "dec"
+        lastWasEqual3 = False
+        halt = False
+        contNum = False
+        DecString = ""
+    End Sub
+
+    Private Sub Hex_Click(sender As Object, e As EventArgs) Handles Hex.Click
+        format = "hex" 'Hexadecimal
+        Button2.Enabled = True
+        Button3.Enabled = True
+        Button4.Enabled = True
+        Button5.Enabled = True
+        Button6.Enabled = True
+        Button7.Enabled = True
+        Button8.Enabled = True
+        Button9.Enabled = True
+        buttA.Enabled = True
+        buttB.Enabled = True
+        buttC.Enabled = True
+        buttD.Enabled = True
+        buttE.Enabled = True
+        buttF.Enabled = True
     End Sub
     Private Sub Binary_Click(sender As Object, e As EventArgs) Handles Binary.Click
         format = "bin" 'binary
@@ -227,6 +365,12 @@
         Button7.Enabled = False
         Button8.Enabled = False
         Button9.Enabled = False
+        buttA.Enabled = False
+        buttB.Enabled = False
+        buttC.Enabled = False
+        buttD.Enabled = False
+        buttE.Enabled = False
+        buttF.Enabled = False
     End Sub
 
     Private Sub GraphingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GraphingToolStripMenuItem.Click
