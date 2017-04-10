@@ -7,6 +7,7 @@
     Public lastWasEqual3 = False
     Public format As String = "dec" 'decimal
     Public BinValue3 As Integer = 0 'Can't convert to binary with a double. Same for others, 
+    Public OctValue3 As Integer = 0
     'I just don't want to mess with the name since it works
     Public DecString As String 'Store equations in decimal form
     Public HexVal1, HexVal2, HexVal3 As String 'For storing hex values
@@ -224,24 +225,23 @@
             'MsgBox(Value1)
             'MsgBox(Value2)
             'MsgBox(Value3)
+            TextBox4.Text = TextBox1.Text
+            AnsToHex()
+            AnsToBin()
+            AnsToOct()
+            TextBox3.Text = HexVal3
+            TextBox5.Text = OctValue3
+            TextBox6.Text = BinValue3
             If format.Equals("bin") Then
-                BinValue3 = Int(TextBox1.Text)
-                BinValue3 = Convert.ToString(BinValue3, 2)
-                BinValue3 = Convert.ToInt32(BinValue3)
+                AnsToBin()
                 TextBox1.Text = BinValue3
             End If
             If format.Equals("oct") Then
-                BinValue3 = Int(TextBox1.Text)
-                BinValue3 = Convert.ToString(BinValue3, 8)
-                BinValue3 = Convert.ToInt32(BinValue3)
-                TextBox1.Text = BinValue3
+                AnsToOct()
+                TextBox1.Text = OctValue3
             End If
             If format.Equals("hex") Then
-                BinValue3 = Int(TextBox1.Text)
-                'MsgBox(TextBox1.Text)
-                HexVal3 = BinValue3.ToString("X")
-                'MsgBox(HexVal3)
-                'BinValue3 = Convert.ToInt32(BinValue3)
+                AnsToHex()
                 TextBox1.Text = HexVal3
             End If
             'MsgBox(BinValue3)
@@ -253,6 +253,22 @@
             MsgBox("Invalid Operation")
         End Try
     End Sub
+
+    Private Sub AnsToHex()
+        BinValue3 = Int(TextBox1.Text)
+        HexVal3 = BinValue3.ToString("X")
+    End Sub
+    Private Sub AnsToBin()
+        BinValue3 = Int(TextBox1.Text)
+        BinValue3 = Convert.ToString(BinValue3, 2)
+        BinValue3 = Convert.ToInt32(BinValue3)
+    End Sub
+    Private Sub AnsToOct()
+        OctValue3 = Int(TextBox1.Text)
+        OctValue3 = Convert.ToString(OctValue3, 8)
+        OctValue3 = Convert.ToInt32(OctValue3)
+    End Sub
+
     Private Sub StandardToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles StandardToolStripMenuItem.Click
         Form1.Show()
         Me.Hide()
@@ -336,6 +352,10 @@
         halt = False
         contNum = False
         DecString = ""
+    End Sub
+
+    Private Sub Programmer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 
     Private Sub Hex_Click(sender As Object, e As EventArgs) Handles Hex.Click

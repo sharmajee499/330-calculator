@@ -13,3 +13,4 @@ K - 	Parenthesis or any equation should work
 3/15/17----------Ryan -- Added Try/Catch statements to the equals button to catch exceptions for invalid operations
 3/26/17----------Ryan -- Added arithmetic with binary to programmer
 4/2/17-----------Ryan -- Added arithmetic with hex and octal to programmer
+4/9/17-----------Ryan -- Some UI changes to programmer, added new textboxes that automatically show the equivilant value in the other formats
