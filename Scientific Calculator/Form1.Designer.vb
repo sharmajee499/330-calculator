@@ -398,37 +398,37 @@ Partial Class Form1
         'StandardToolStripMenuItem
         '
         Me.StandardToolStripMenuItem.Name = "StandardToolStripMenuItem"
-        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.StandardToolStripMenuItem.Text = "Standard"
         '
         'ScientificToolStripMenuItem
         '
         Me.ScientificToolStripMenuItem.Name = "ScientificToolStripMenuItem"
-        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ScientificToolStripMenuItem.Text = "Scientific"
         '
         'ProgrammerToolStripMenuItem
         '
         Me.ProgrammerToolStripMenuItem.Name = "ProgrammerToolStripMenuItem"
-        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProgrammerToolStripMenuItem.Text = "Programmer"
         '
         'GraphingToolStripMenuItem
         '
         Me.GraphingToolStripMenuItem.Name = "GraphingToolStripMenuItem"
-        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.GraphingToolStripMenuItem.Text = "Graphing"
         '
         'FunctionsToolStripMenuItem
         '
         Me.FunctionsToolStripMenuItem.Name = "FunctionsToolStripMenuItem"
-        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FunctionsToolStripMenuItem.Text = "Functions"
         '
         'ConverterToolStripMenuItem
         '
         Me.ConverterToolStripMenuItem.Name = "ConverterToolStripMenuItem"
-        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ConverterToolStripMenuItem.Text = "Converter"
         '
         'TextBox1
@@ -456,6 +456,8 @@ Partial Class Form1
         '
         'BtnHistory
         '
+        Me.BtnHistory.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BtnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnHistory.Location = New System.Drawing.Point(226, 1)
         Me.BtnHistory.Name = "BtnHistory"
         Me.BtnHistory.Size = New System.Drawing.Size(75, 23)
@@ -532,7 +534,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(302, 555)
+        Me.ClientSize = New System.Drawing.Size(302, 545)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.BtnMMinus)
         Me.Controls.Add(Me.BtnMPlus)

@@ -226,7 +226,7 @@
         Mem = Mem + Val(TextBox1.Text)
     End Sub
 
-    Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
+    Private Sub BtnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
         TextBox1.Text = 0
         TextBox2.Text = 0
         contOper = 0
@@ -250,7 +250,7 @@
         Mem = Mem - Val(TextBox1.Text)
     End Sub
 
-    Private Sub btnCE_Click(sender As Object, e As EventArgs) Handles btnCE.Click
+    Private Sub BtnCE_Click(sender As Object, e As EventArgs) Handles btnCE.Click
         TextBox1.Text = 0
         TextBox2.Text = 0
         Value1 = 0
@@ -290,7 +290,7 @@
         Mem = 0
     End Sub
 
-    Private Sub btnPercent_Click(sender As Object, e As EventArgs) Handles btnPercent.Click
+    Private Sub BtnPercent_Click(sender As Object, e As EventArgs) Handles btnPercent.Click
         TextBox1.Text = Value1 * (Val(TextBox1.Text) / 100)
         TextBox2.Text += "%"
     End Sub
