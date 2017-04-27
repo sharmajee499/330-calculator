@@ -705,7 +705,7 @@ Partial Class Scientific
         Me.GroupBox1.Controls.Add(Me.BtnCos)
         Me.GroupBox1.Controls.Add(Me.BtnTan)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(2, 178)
+        Me.GroupBox1.Location = New System.Drawing.Point(2, 179)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(304, 132)
         Me.GroupBox1.TabIndex = 44
