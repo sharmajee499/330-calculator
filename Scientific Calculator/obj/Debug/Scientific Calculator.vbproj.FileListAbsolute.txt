@@ -142,3 +142,4 @@ C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calc
 C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.exe
 C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.xml
 C:\Users\Ryan\Desktop\Other\Programming\VB\Scientific Calculator\Scientific Calculator\obj\Debug\Scientific Calculator.pdb
+C:\Users\Kevin H\Desktop\Calc\Scientific Calculator\obj\Debug\Scientific_Calculator.Table.resources

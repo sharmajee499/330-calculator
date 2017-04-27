@@ -254,13 +254,13 @@
 
     'Reverse Polish Notation + Shunting yard - to calculate
     '---------------------------------------------------------------------------------
-    Sub getValue()
+    Sub getValue() 'Scientific
         Dim source As String = Scientific.TextBox2.Text
         Dim format As String = FormatExpression(source)
         Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
-        Scientific.TextBox1.Text = Evaluate(rpn)
+        Scientific.TextBox1.Text = format
     End Sub
-    Sub getValue2()
+    Sub getValue2() 'Basic
         Dim source As String = Form1.TextBox2.Text
         Dim format As String = FormatExpression(source)
         Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
@@ -272,15 +272,22 @@
         Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
         Programmer.TextBox1.Text = Evaluate(rpn)
     End Sub
+    Sub getValue4() 'Table
+        Dim source As String = Table.equation2
+        Dim format As String = FormatExpression(source)
+        Dim rpn() As Token = ShuntingYardAlgorithm(Scan(format))
+        Table.yValue.Text =
+            Table.yValue.Text &
+            Table.numRange1 & "    |    " & Evaluate(rpn) & vbCrLf & vbCrLf
+        Evaluate(rpn)
+    End Sub
     Private Function FormatExpression(ByVal expression As String) As String
         Dim format As String = expression.Replace(" ", String.Empty)
 
-        format = format.Replace("-", "- ")
         format = format.Replace("(", " ( ").Replace(")", " ) ")
 
-
         Dim unaryEvaluator As System.Text.RegularExpressions.MatchEvaluator = New System.Text.RegularExpressions.MatchEvaluator(AddressOf ReplaceUnary)
-        format = System.Text.RegularExpressions.Regex.Replace(format, "(\+|-|\*|\\|\^)-", unaryEvaluator)
+        format = System.Text.RegularExpressions.Regex.Replace(format, "(\+|\-|\*|\\|\^)-", unaryEvaluator)
 
         Dim digitEvaluator As System.Text.RegularExpressions.MatchEvaluator = New System.Text.RegularExpressions.MatchEvaluator(AddressOf ReplaceDigits)
         format = System.Text.RegularExpressions.Regex.Replace(format, "(-?[0-9]+(?:\.[0-9]*)?)", digitEvaluator)
@@ -288,7 +295,6 @@
         format = System.Text.RegularExpressions.Regex.Replace(format, " {2,}", " ")
 
         format = format.Trim()
-        format = format.Replace("- - ", "- -")
 
         Return format
     End Function

@@ -615,6 +615,10 @@
         old = True
     End Sub
 
+    Private Sub BtnTable_Click(sender As Object, e As EventArgs) Handles BtnTable.Click
+        Table.Show()
+    End Sub
+
     Private Sub BtnHistory_Click(sender As Object, e As EventArgs) Handles BtnHistory.Click
         If Me.Width = 318 Then
             Me.Width = 601

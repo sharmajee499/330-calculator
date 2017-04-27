@@ -86,6 +86,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Table.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Table.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Functions.Designer.vb">
       <DependentUpon>Functions.vb</DependentUpon>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Scientific.resx">
       <DependentUpon>Scientific.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table.resx">
+      <DependentUpon>Table.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -62,6 +62,7 @@ Partial Class Form1
         Me.BtnMPlus = New System.Windows.Forms.Button()
         Me.BtnMMinus = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.BtnTable = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -398,37 +399,37 @@ Partial Class Form1
         'StandardToolStripMenuItem
         '
         Me.StandardToolStripMenuItem.Name = "StandardToolStripMenuItem"
-        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.StandardToolStripMenuItem.Text = "Standard"
         '
         'ScientificToolStripMenuItem
         '
         Me.ScientificToolStripMenuItem.Name = "ScientificToolStripMenuItem"
-        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ScientificToolStripMenuItem.Text = "Scientific"
         '
         'ProgrammerToolStripMenuItem
         '
         Me.ProgrammerToolStripMenuItem.Name = "ProgrammerToolStripMenuItem"
-        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ProgrammerToolStripMenuItem.Text = "Programmer"
         '
         'GraphingToolStripMenuItem
         '
         Me.GraphingToolStripMenuItem.Name = "GraphingToolStripMenuItem"
-        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.GraphingToolStripMenuItem.Text = "Graphing"
         '
         'FunctionsToolStripMenuItem
         '
         Me.FunctionsToolStripMenuItem.Name = "FunctionsToolStripMenuItem"
-        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.FunctionsToolStripMenuItem.Text = "Functions"
         '
         'ConverterToolStripMenuItem
         '
         Me.ConverterToolStripMenuItem.Name = "ConverterToolStripMenuItem"
-        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ConverterToolStripMenuItem.Text = "Converter"
         '
         'TextBox1
@@ -530,11 +531,23 @@ Partial Class Form1
         Me.TextBox2.TabIndex = 34
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
+        'BtnTable
+        '
+        Me.BtnTable.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BtnTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTable.Location = New System.Drawing.Point(145, 1)
+        Me.BtnTable.Name = "BtnTable"
+        Me.BtnTable.Size = New System.Drawing.Size(75, 23)
+        Me.BtnTable.TabIndex = 53
+        Me.BtnTable.Text = "Table"
+        Me.BtnTable.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(302, 545)
+        Me.Controls.Add(Me.BtnTable)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.BtnMMinus)
         Me.Controls.Add(Me.BtnMPlus)
@@ -621,4 +634,5 @@ Partial Class Form1
     Friend WithEvents BtnMPlus As Button
     Friend WithEvents BtnMMinus As Button
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents BtnTable As Button
 End Class

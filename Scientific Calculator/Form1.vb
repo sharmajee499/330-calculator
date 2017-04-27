@@ -281,6 +281,10 @@
         Me.Hide()
     End Sub
 
+    Private Sub BtnTable_Click(sender As Object, e As EventArgs) Handles BtnTable.Click
+        Table.Show()
+    End Sub
+
     Private Sub BtnXSqr_Click(sender As Object, e As EventArgs) Handles BtnXSqr.Click
         TextBox1.Text = Val(TextBox1.Text) ^ 2
         TextBox2.Text += "^2"

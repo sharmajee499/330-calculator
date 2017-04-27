@@ -96,6 +96,7 @@ Partial Class Scientific
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.BtnHistory = New System.Windows.Forms.Button()
         Me.History = New System.Windows.Forms.TextBox()
+        Me.BtnTable = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -624,7 +625,7 @@ Partial Class Scientific
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(302, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(296, 24)
         Me.MenuStrip1.TabIndex = 40
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -638,37 +639,37 @@ Partial Class Scientific
         'StandardToolStripMenuItem
         '
         Me.StandardToolStripMenuItem.Name = "StandardToolStripMenuItem"
-        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.StandardToolStripMenuItem.Text = "Standard"
         '
         'ScientificToolStripMenuItem
         '
         Me.ScientificToolStripMenuItem.Name = "ScientificToolStripMenuItem"
-        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ScientificToolStripMenuItem.Text = "Scientific"
         '
         'ProgrammerToolStripMenuItem
         '
         Me.ProgrammerToolStripMenuItem.Name = "ProgrammerToolStripMenuItem"
-        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ProgrammerToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ProgrammerToolStripMenuItem.Text = "Programmer"
         '
         'GraphingToolStripMenuItem
         '
         Me.GraphingToolStripMenuItem.Name = "GraphingToolStripMenuItem"
-        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.GraphingToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.GraphingToolStripMenuItem.Text = "Graphing"
         '
         'FunctionsToolStripMenuItem
         '
         Me.FunctionsToolStripMenuItem.Name = "FunctionsToolStripMenuItem"
-        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FunctionsToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.FunctionsToolStripMenuItem.Text = "Functions"
         '
         'ConverterToolStripMenuItem
         '
         Me.ConverterToolStripMenuItem.Name = "ConverterToolStripMenuItem"
-        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ConverterToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ConverterToolStripMenuItem.Text = "Converter"
         '
         'TextBox1
@@ -996,11 +997,23 @@ Partial Class Scientific
         Me.History.TabIndex = 51
         Me.History.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
+        'BtnTable
+        '
+        Me.BtnTable.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.BtnTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTable.Location = New System.Drawing.Point(145, 1)
+        Me.BtnTable.Name = "BtnTable"
+        Me.BtnTable.Size = New System.Drawing.Size(75, 23)
+        Me.BtnTable.TabIndex = 52
+        Me.BtnTable.Text = "Table"
+        Me.BtnTable.UseVisualStyleBackColor = True
+        '
         'Scientific
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(302, 528)
+        Me.ClientSize = New System.Drawing.Size(296, 528)
+        Me.Controls.Add(Me.BtnTable)
         Me.Controls.Add(Me.History)
         Me.Controls.Add(Me.BtnHistory)
         Me.Controls.Add(Me.GroupBox3)
@@ -1128,4 +1141,5 @@ Partial Class Scientific
     Friend WithEvents BtnInverseSinh As Button
     Friend WithEvents BtnHistory As Button
     Friend WithEvents History As TextBox
+    Friend WithEvents BtnTable As Button
 End Class
