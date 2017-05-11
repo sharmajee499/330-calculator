@@ -1,0 +1,113 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="x_min" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-4.1</Value>
+    </Setting>
+    <Setting Name="x_max" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">4.1</Value>
+    </Setting>
+    <Setting Name="y_min" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-4.1</Value>
+    </Setting>
+    <Setting Name="y_max" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">4.1</Value>
+    </Setting>
+    <Setting Name="fraction" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="autofix" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="splitterDistance" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">474</Value>
+    </Setting>
+    <Setting Name="degreeMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">688</Value>
+    </Setting>
+    <Setting Name="height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">466</Value>
+    </Setting>
+    <Setting Name="splitterOrientation" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="isMaximized" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="left" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="top" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="saveOption" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="calcText" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="colorText" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="fontText" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Consolas, 12pt, style=Bold</Value>
+    </Setting>
+    <Setting Name="thickness" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="projector" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="antialias" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Amin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-2.5</Value>
+    </Setting>
+    <Setting Name="Amax" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2.5</Value>
+    </Setting>
+    <Setting Name="grouping" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="speechEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="autoCalculate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="autoDelete" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="drawMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="userFunctions" Type="System.String" Scope="User">
+      <Value Profile="(Default)">' User defined functions go here.  Write VBScript code, not VB.NET.
+' You cannot use existing function names, or the letters r, x, or y in your function names.
+' You may use any functions or variables already defined for your code, as well as the variable 'deg' for degree/radian conversion.
+' USE AT YOUR OWN RISK.  If you change the location of Photon.exe, work will be lost.
+' Below is an example.
+
+public function sample(n)
+    tempVar = 0
+    if (n &lt; 10) then
+        tempVar = n * 2
+    else
+        tempVar = n / 2
+    end if
+    sample = tempVar
+end function</Value>
+    </Setting>
+    <Setting Name="draw3DLines" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="highlighting" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
